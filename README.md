@@ -76,9 +76,9 @@ assets/                       Icons and branding
 | Plan | Price | Included |
 |------|-------|----------|
 | **Free** | $0 | 3 analyses/day, basic graph view |
-| **Plugin** | $4.99/mo | Unlimited analyses, token analysis, priority rendering |
-| **Pro** | $10/mo | Everything in Plugin + Steam desktop app + Stripe App |
+| **Pro** | $9.99/mo | Unlimited analyses · Token Waste · Security · Repo Map · Game Plan · All future features |
 | **Annual** | $89/yr | Everything in Pro, ~26% savings |
+| **Team** | $9.99/mo per user | Everything in Pro · Multi-seat · Shared history · Webhook alerts |
 
 Manage billing at [nxgentechsolutions.com/billing](https://nxgentechsolutions.com/billing).
 
