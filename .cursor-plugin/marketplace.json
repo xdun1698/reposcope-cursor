@@ -1,0 +1,35 @@
+{
+  "name": "codewalker-marketplace",
+  "owner": {
+    "name": "NxGen Tech Solutions",
+    "email": "support@nxgentechsolutions.com"
+  },
+  "metadata": {
+    "description": "Developer productivity plugins from NxGen Tech Solutions"
+  },
+  "plugins": [
+    {
+      "name": "codewalker",
+      "source": ".",
+      "description": "AI Cost Intelligence for any repo: token waste detector, security heatmap, interactive repo map, and AI game-plan tracker. Works on any language/framework — no repo-specific setup required.",
+      "version": "1.5.4",
+      "author": {
+        "name": "NxGen Tech Solutions",
+        "email": "support@nxgentechsolutions.com"
+      },
+      "homepage": "https://codewalker.dev",
+      "repository": "https://github.com/xdun1698/codewalker-cursor",
+      "license": "MIT",
+      "logo": "assets/codewalker-icon.png",
+      "keywords": [
+        "token-analysis",
+        "security",
+        "repo-map",
+        "ai-cost",
+        "code-quality",
+        "game-plan"
+      ],
+      "category": "Code Quality"
+    }
+  ]
+}

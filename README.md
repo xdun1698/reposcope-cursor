@@ -9,7 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=nxgentech.codewalker"><img src="https://img.shields.io/badge/VS%20Code-Extension-007ACC?logo=visualstudiocode&logoColor=white" alt="VS Code"/></a>
+  <a href="vscode:extension/nxgentech.codewalker"><img src="https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white" alt="Install in VS Code / Cursor"/></a>
+  <a href="https://open-vsx.org/extension/nxgentech/codewalker"><img src="https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white" alt="OpenVSX"/></a>
+  <a href="https://cursor.com/marketplace"><img src="https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white" alt="Cursor Marketplace"/></a>
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License"/>
 </p>
 
@@ -39,34 +41,47 @@ AI-powered goal suggestions based on your repo analysis. Track progress, mark go
 
 ## Install
 
-### Cursor Marketplace
+### One-click (Cursor / VS Code)
 
-Search **"CodeWalker"** in the Cursor plugin marketplace, or install the local plugin:
+Click the **Install** badge above or paste into the Command Palette (`Cmd+Shift+P`):
 
-```bash
-# Clone into Cursor's local plugins directory
-git clone https://github.com/xdun1698/codewalker-cursor.git ~/.cursor/plugins/local/codewalker
 ```
-
-Then reload Cursor (Command Palette → **Developer: Reload Window**).
-
-### VS Code / Cursor Extension
-
-```bash
 ext install nxgentech.codewalker
 ```
 
-Or search **"CodeWalker"** in the Extensions sidebar.
+The extension auto-registers the bundled Cursor plugin — hooks, skills, and commands activate immediately on any repo.
+
+### Cursor Plugin Marketplace
+
+Search **"CodeWalker"** in the Cursor plugin marketplace (`Cmd+Shift+P` -> `Cursor: Open Plugin Marketplace`).
+
+### One-command install (alternative)
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/xdun1698/codewalker-cursor/main/scripts/install.sh)
+```
 
 ---
 
 ## Plugin Structure
 
 ```
-.cursor-plugin/plugin.json   Plugin manifest (hooks, skills, sidebar tabs)
-skills/                       Python analysis scripts (token audit, vuln scan, repo trace, game plan)
-commands/                     Agent commands (goal suggestions)
-assets/                       Icons and branding
+.cursor-plugin/
+├── plugin.json                Plugin manifest (name, version, author, logo)
+└── marketplace.json           Multi-plugin marketplace manifest
+skills/
+├── token_audit.py             Python analysis script (extension webviews)
+├── token-audit/SKILL.md       Cursor agent skill definition
+├── vuln-scan/SKILL.md         Security scan agent skill
+├── repo-trace/SKILL.md        Repo map agent skill
+├── game-plan/SKILL.md         Game plan agent skill
+└── suggest-goals/SKILL.md     Goal suggestion agent skill
+commands/
+└── suggest-goals.md           Agent command (goal suggestions)
+hooks/
+└── hooks.json                 Event-driven automation hooks
+assets/
+└── codewalker-icon.png        Branding
 ```
 
 ---
@@ -76,9 +91,9 @@ assets/                       Icons and branding
 | Plan | Price | Included |
 |------|-------|----------|
 | **Free** | $0 | 3 analyses/day, basic graph view |
-| **Pro** | $9.99/mo | Unlimited analyses · Token Waste · Security · Repo Map · Game Plan · All future features |
-| **Annual** | $89/yr | Everything in Pro, ~26% savings |
-| **Team** | $9.99/mo per user | Everything in Pro · Multi-seat · Shared history · Webhook alerts |
+| **Pro** | $9.99/mo | 500K repo-token pool/mo on Insight (baseline) · Token Waste · Security · Repo Map · Game Plan |
+| **Annual** | $89/yr | Same as Pro, ~26% savings |
+| **Team** | $9.99/mo per user | Same as Pro · Multi-seat · Shared history · Webhook alerts |
 
 Manage billing at [nxgentechsolutions.com/billing](https://nxgentechsolutions.com/billing).
 

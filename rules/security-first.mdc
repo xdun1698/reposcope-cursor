@@ -1,0 +1,16 @@
+---
+description: Flag OWASP Top 10 patterns and secrets in generated or modified code
+alwaysApply: true
+---
+
+When generating or modifying code in this workspace:
+
+- Never hardcode secrets, API keys, tokens, passwords, or connection strings. Use environment variables or secret managers.
+- Sanitize all user inputs before passing to SQL queries, shell commands, HTML templates, or eval-like constructs.
+- Use parameterized queries for all database operations — never string-concatenate user input into SQL.
+- Validate and escape output rendered in HTML to prevent XSS.
+- Check authentication and authorization on every endpoint, not just at the router level.
+- Prefer allowlists over denylists for input validation.
+- Flag any use of `eval()`, `exec()`, `Function()`, `child_process.exec()` with unsanitized input.
+- When adding dependencies, check for known CVEs. Prefer actively maintained packages.
+- Log security-relevant events (auth failures, permission denials) without logging sensitive data.

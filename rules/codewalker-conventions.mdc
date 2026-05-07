@@ -1,0 +1,19 @@
+---
+description: CodeWalker project conventions for contributors and AI agents working on this codebase
+alwaysApply: false
+globs: "**/*.{ts,tsx,py}"
+---
+
+CodeWalker project conventions:
+
+- Use functional and declarative patterns. Avoid classes unless required by the VS Code API (e.g. WebviewViewProvider).
+- Prefer pure functions that don't mutate inputs or global state.
+- Use ES modules with destructured imports: `import { foo } from 'bar'`.
+- Indent with 2 spaces. Omit semicolons in TypeScript.
+- Keep functions under 50 lines. Use early returns and guard clauses.
+- Name files in kebab-case, functions and variables in camelCase, types and classes in PascalCase.
+- Every provider must implement `getReport()` for cross-provider context sharing.
+- Python skill scripts read JSON from stdin and write JSON to stdout. No interactive prompts.
+- Skill results always return `{ success: boolean, data: object | null, error?: string }`.
+- Test with `npm test` (extension unit tests) and `npm run test:e2e` (Playwright E2E).
+- Run `npm run compile` before committing — the CI gate will fail on type errors.
