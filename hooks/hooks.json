@@ -1,0 +1,21 @@
+{
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "python3 skills/token_audit.py",
+        "matcher": "\\.(ts|js|tsx|jsx|py|cs)$"
+      }
+    ],
+    "afterAgentResponse": [
+      {
+        "command": "python3 skills/parse_suggested_goals.py",
+        "matcher": "suggest-goals"
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "python3 skills/game_plan.py"
+      }
+    ]
+  }
+}

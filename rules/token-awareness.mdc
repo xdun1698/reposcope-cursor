@@ -1,0 +1,13 @@
+---
+description: Remind agents to consider LLM token cost when generating or refactoring code
+alwaysApply: true
+---
+
+When generating, reviewing, or refactoring code in this workspace:
+
+- Prefer concise implementations that minimize token count without sacrificing readability.
+- Avoid duplicating large blocks of code — extract shared logic into functions.
+- Remove unused imports, dead code, and commented-out blocks before presenting results.
+- When suggesting file inclusions for AI context, prioritize files with the highest signal-to-token ratio.
+- If a file exceeds 500 lines, suggest splitting it before adding more code.
+- Flag any generated code that would add more than 200 tokens of boilerplate (e.g. verbose type declarations that could use inference).

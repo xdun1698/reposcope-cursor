@@ -1,79 +1,21 @@
 {
-  "name": "CodeWalker",
-  "version": "1.5.0",
-  "description": "Swiss Army knife for devs: token waste detector, security flagging, live repo viewer, game plan tracker. Runs as a sidebar agent.",
-  "author": "CodeWalker",
-  "icon": "codewalker-icon.png",
-  "homepage": "https://codewalker.dev",
-  "license": "MIT",
-
-  "hooks": [
-    { "event": "onGitCommit", "action": "scanCommitDiff", "priority": "high" },
-    { "event": "onFileSave", "action": "analyzeTokenWaste", "priority": "medium" },
-    { "event": "onCursorChat", "action": "injectSuggestions", "priority": "low" },
-    { "event": "onCursorOpen", "action": "repoTrace", "output": "repoTab" },
-    { "event": "onGitCommit", "action": "vulnScan", "output": "securityTab + overlay" },
-    { "event": "onFileSave", "action": "tokenAudit", "output": "tokenTab" },
-    { "event": "onCursorAgentComplete", "action": "updateGamePlan", "input": "agentOutput", "output": "gameplanTab", "priority": "low" },
-    { "event": "afterAgentResponse", "action": "parseSuggestedGoals", "input": "agentOutput", "output": "gameplanTab", "priority": "low", "matcher": "suggest-goals" }
-  ],
-
-  "subagents": [
-    {
-      "id": "tokenOptimizer",
-      "name": "Token Saver",
-      "description": "Scans context for junk — unused vars, bloated imports, stale indexes. Shows waste in sidebar graph.",
-      "trigger": "onFileSave OR onCursorChat",
-      "output": "sidebarTab",
-      "icon": "graph-icon"
-    },
-    {
-      "id": "securityGuard",
-      "name": "Security Flagger",
-      "description": "Real-time vuln highlighter: secrets, injections, deps. Red/yellow/green heatmap on code.",
-      "trigger": "onGitCommit OR onCursorChat",
-      "output": "overlay + sidebarTab",
-      "icon": "shield-icon"
-    },
-    {
-      "id": "repoWatcher",
-      "name": "Repo Viewer",
-      "description": "Live repo map — click to jump, see Cursor build history, trace token hogs.",
-      "trigger": "onCursorOpen OR onGitCommit",
-      "output": "sidebarTab",
-      "icon": "tree-icon"
-    }
-  ],
-
-  "skills": [
-    { "name": "tokenAudit", "description": "Runs lightweight AST parse — flags 200+ token leaks per file.", "input": "filePath", "output": "wasteReport" },
-    { "name": "vulnScan", "description": "Checks for OWASP top 10 + secrets. Returns severity + fix.", "input": "diff OR fullFile", "output": "vulnList" },
-    { "name": "repoTrace", "description": "Builds git tree + Cursor session log. Links code to past runs.", "input": "repoRoot", "output": "interactiveTree" },
-    { "name": "updateGamePlan", "description": "Auto-updates goal progress from Cursor agent output.", "input": "agentOutput", "output": "planUpdate" },
-    { "name": "parseSuggestedGoals", "description": "Extracts suggested goals from agent response and merges into plan.", "input": "agentOutput", "output": "goalList" }
-  ],
-
-  "sidebar": {
-    "tabs": [
-      { "id": "tokenTab", "title": "Token Waste", "icon": "graph-icon", "content": "tokenGraph", "default": true },
-      { "id": "securityTab", "title": "Security", "icon": "shield-icon", "content": "securityHeatmap", "overlay": true },
-      { "id": "repoTab", "title": "Repo Map", "icon": "tree-icon", "content": "repoTree" },
-      { "id": "gameplanTab", "title": "Game Plan", "icon": "map-icon", "content": "gamePlanView" }
-    ]
+  "name": "codewalker",
+  "description": "AI Cost Intelligence for any repo: token waste detector, security heatmap, interactive repo map, and AI game-plan tracker. Works on any language/framework — no repo-specific setup required.",
+  "version": "1.5.4",
+  "author": {
+    "name": "NxGen Tech Solutions",
+    "email": "support@nxgentechsolutions.com"
   },
-
-  "commands": [
-    {
-      "name": "suggest-goals",
-      "description": "Generate 3-5 smart next goals from current repo and plan.",
-      "file": "commands/suggest-goals.md"
-    }
-  ],
-
-  "permissions": {
-    "git": "read",
-    "filesystem": "read",
-    "editor": "overlay",
-    "network": "none"
-  }
+  "homepage": "https://codewalker.dev",
+  "repository": "https://github.com/xdun1698/codewalker-cursor",
+  "license": "MIT",
+  "logo": "assets/codewalker-icon.png",
+  "keywords": [
+    "token-analysis",
+    "security",
+    "repo-map",
+    "ai-cost",
+    "code-quality",
+    "game-plan"
+  ]
 }

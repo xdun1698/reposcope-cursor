@@ -1,3 +1,8 @@
+---
+name: suggest-goals
+description: Generate 3-5 prioritized next goals from CodeWalker analysis results and current game plan.
+---
+
 # suggest-goals
 
 You are helping prioritize work for the CodeWalker Cursor plugin.
