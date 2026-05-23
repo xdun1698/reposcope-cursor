@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# CodeWalker — one-command installer
+# Reposcope — one-command installer
 #
 # Usage (run from any directory — it works on any repo):
-#   curl -fsSL https://raw.githubusercontent.com/xdun1698/codewalker-cursor/main/scripts/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/scripts/install.sh | bash
 #
 # Or, if you already have the repo cloned:
 #   bash ~/Codewalker/scripts/install.sh
@@ -13,7 +13,7 @@
 #   CW_MODE       "vsix"   — installs the .vsix into Cursor (default)
 #                 "link"   — symlinks repo into ~/.cursor/plugins/local/ instead
 #                 "both"   — does both
-#   CW_GAMEPLAN   Set to 1 to initialize .codewalker-gameplan.json in $PWD
+#   CW_GAMEPLAN   Set to 1 to initialize .reposcope-gameplan.json in $PWD
 #
 # The script does NOT require root and does NOT write outside ~/Codewalker and ~/.cursor/.
 
@@ -21,17 +21,17 @@ set -euo pipefail
 
 # ─── colour helpers ──────────────────────────────────────────────────────────
 RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'; CYAN='\033[0;36m'; NC='\033[0m'
-info()    { echo -e "${CYAN}[codewalker]${NC} $*"; }
-success() { echo -e "${GREEN}[codewalker]${NC} $*"; }
-warn()    { echo -e "${YELLOW}[codewalker]${NC} $*"; }
-die()     { echo -e "${RED}[codewalker] ERROR:${NC} $*" >&2; exit 1; }
+info()    { echo -e "${CYAN}[reposcope]${NC} $*"; }
+success() { echo -e "${GREEN}[reposcope]${NC} $*"; }
+warn()    { echo -e "${YELLOW}[reposcope]${NC} $*"; }
+die()     { echo -e "${RED}[reposcope] ERROR:${NC} $*" >&2; exit 1; }
 
 # ─── config ──────────────────────────────────────────────────────────────────
 CW_REPO_DIR="${CW_REPO_DIR:-$HOME/Codewalker}"
 CW_SKIP_BUILD="${CW_SKIP_BUILD:-0}"
 CW_MODE="${CW_MODE:-vsix}"
 CW_GAMEPLAN="${CW_GAMEPLAN:-0}"
-CW_REMOTE="${CW_REMOTE:-https://github.com/xdun1698/codewalker-cursor.git}"
+CW_REMOTE="${CW_REMOTE:-https://github.com/xdun1698/reposcope-cursor.git}"
 TARGET_DIR="${PWD}"
 
 # ─── prereq checks ───────────────────────────────────────────────────────────
@@ -65,12 +65,12 @@ done
 [[ -z "$CURSOR_BIN" ]] && warn "cursor CLI not found — will print manual VSIX install instructions."
 
 # ─── clone / update repo ─────────────────────────────────────────────────────
-info "Resolving CodeWalker source at: $CW_REPO_DIR"
+info "Resolving Reposcope source at: $CW_REPO_DIR"
 if [[ -d "$CW_REPO_DIR/.git" ]]; then
   info "Repo found — pulling latest…"
   git -C "$CW_REPO_DIR" pull --ff-only --quiet || warn "git pull failed (local changes?); continuing with current state."
 else
-  info "Cloning CodeWalker into $CW_REPO_DIR …"
+  info "Cloning Reposcope into $CW_REPO_DIR …"
   git clone --depth 1 "$CW_REMOTE" "$CW_REPO_DIR"
 fi
 
@@ -93,12 +93,12 @@ else
 
   info "Packaging VSIX…"
   # --no-dependencies: skip marketplace git check for local builds
-  (cd "$CW_REPO_DIR" && eval "$VSCE_BIN" package --no-dependencies --out codewalker-latest.vsix) \
+  (cd "$CW_REPO_DIR" && eval "$VSCE_BIN" package --no-dependencies --out reposcope-latest.vsix) \
     || die "vsce package failed. Run 'npm run compile' in $CW_REPO_DIR to diagnose."
 fi
 
 # Locate the most-recently-built VSIX
-VSIX_PATH="$(ls -t "$CW_REPO_DIR"/codewalker*.vsix 2>/dev/null | head -1)"
+VSIX_PATH="$(ls -t "$CW_REPO_DIR"/reposcope*.vsix 2>/dev/null | head -1)"
 
 # ─── install mode: vsix ──────────────────────────────────────────────────────
 install_vsix() {
@@ -130,7 +130,7 @@ _manual_vsix_instructions() {
 # ─── install mode: link (Cursor local plugin) ─────────────────────────────────
 install_link() {
   local plugins_dir="$HOME/.cursor/plugins/local"
-  local link_target="$plugins_dir/codewalker"
+  local link_target="$plugins_dir/reposcope"
   mkdir -p "$plugins_dir"
 
   if [[ -L "$link_target" ]]; then
@@ -154,42 +154,42 @@ case "$CW_MODE" in
   *)           die "Unknown CW_MODE='$CW_MODE'. Use vsix, link, or both." ;;
 esac
 
-# ─── optional: init .codewalker-gameplan.json in target repo ─────────────────
+# ─── optional: init .reposcope-gameplan.json in target repo ─────────────────
 if [[ "$CW_GAMEPLAN" == "1" && "$TARGET_DIR" != "$CW_REPO_DIR" ]]; then
-  GAMEPLAN_FILE="$TARGET_DIR/.codewalker-gameplan.json"
+  GAMEPLAN_FILE="$TARGET_DIR/.reposcope-gameplan.json"
   if [[ -f "$GAMEPLAN_FILE" ]]; then
-    info ".codewalker-gameplan.json already exists — skipping."
+    info ".reposcope-gameplan.json already exists — skipping."
   else
-    info "Initializing .codewalker-gameplan.json in $TARGET_DIR …"
+    info "Initializing .reposcope-gameplan.json in $TARGET_DIR …"
     REPO_NAME="$(basename "$TARGET_DIR")"
     cat > "$GAMEPLAN_FILE" <<JSON
 {
   "project": "$REPO_NAME",
   "goals": [],
-  "context": "CodeWalker analysis target. Run 'CodeWalker: Run Full Analysis' in Cursor to populate token waste, security, and repo map tabs.",
-  "generatedBy": "CodeWalker install.sh",
+  "context": "Reposcope analysis target. Run 'Reposcope: Run Full Analysis' in Cursor to populate token waste, security, and repo map tabs.",
+  "generatedBy": "Reposcope install.sh",
   "version": "1"
 }
 JSON
     success "Created $GAMEPLAN_FILE"
-    warn "Add .codewalker-gameplan.json to .gitignore if you don't want to commit it."
+    warn "Add .reposcope-gameplan.json to .gitignore if you don't want to commit it."
   fi
 fi
 
 # ─── done ────────────────────────────────────────────────────────────────────
 echo ""
-success "CodeWalker install complete!"
+success "Reposcope install complete!"
 echo ""
-echo "  What CodeWalker does on ANY repo:"
+echo "  What Reposcope does on ANY repo:"
 echo "  • Token Waste  — BPE-accurate token cost per file; shows which files drain your AI context budget"
 echo "  • Security     — OWASP Top 10 + secrets scanner with heatmap overlay"
 echo "  • Repo Map     — Interactive dependency graph + git timeline"
-echo "  • Game Plan    — AI-powered goal tracker, persisted in .codewalker-gameplan.json"
+echo "  • Game Plan    — AI-powered goal tracker, persisted in .reposcope-gameplan.json"
 echo ""
 echo "  Quick start:"
 echo "  1. Open any repo in Cursor"
-echo "  2. Click the CodeWalker icon in the activity bar (or Cmd+Shift+K)"
-echo "  3. Run 'CodeWalker: Run Full Analysis' from the command palette"
+echo "  2. Click the Reposcope icon in the activity bar (or Cmd+Shift+K)"
+echo "  3. Run 'Reposcope: Run Full Analysis' from the command palette"
 echo ""
 if [[ -n "$PYTHON_BIN" ]]; then
   echo "  Python detected ($PYTHON_BIN) — skills run locally (no server needed)."
@@ -197,5 +197,5 @@ else
   echo "  No Python 3 detected — skills will use HTTP fallback (requires Insight server)."
 fi
 echo ""
-echo "  Docs: https://github.com/xdun1698/codewalker-cursor"
+echo "  Docs: https://github.com/xdun1698/reposcope-cursor"
 echo "  Support: support@nxgentechsolutions.com"

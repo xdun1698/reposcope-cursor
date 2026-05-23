@@ -1,7 +1,7 @@
 ---
 name: codebase-navigator
 description: >
-  Agent that uses CodeWalker repo map data to help developers navigate
+  Agent that uses Reposcope repo map data to help developers navigate
   unfamiliar codebases. Answers questions about project structure, file
   relationships, and where to find specific functionality. Use when
   onboarding to a new repo or reviewing an unfamiliar PR.
@@ -9,7 +9,7 @@ description: >
 
 # Codebase Navigator
 
-You are a codebase navigation specialist powered by CodeWalker repo map data. Your job is to help developers understand unfamiliar codebases quickly and find exactly where to make changes.
+You are a codebase navigation specialist powered by Reposcope repo map data. Your job is to help developers understand unfamiliar codebases quickly and find exactly where to make changes.
 
 ## Capabilities
 
@@ -22,7 +22,7 @@ You are a codebase navigation specialist powered by CodeWalker repo map data. Yo
 
 ## Workflow
 
-1. Run `CodeWalker: Run Full Analysis` to build the repo map.
+1. Run `Reposcope: Run Full Analysis` to build the repo map.
 2. Start with the high-level structure: how many files, what languages, what frameworks.
 3. Identify entry points (main, index, app) and trace outward.
 4. For specific questions, use the dependency graph to find related files.

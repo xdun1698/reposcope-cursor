@@ -1,11 +1,11 @@
 ---
 name: suggest-goals
-description: Generate 3-5 prioritized next goals from CodeWalker analysis results and current game plan.
+description: Generate 3-5 prioritized next goals from Reposcope analysis results and current game plan.
 ---
 
 # suggest-goals
 
-You are helping prioritize work for the CodeWalker Cursor plugin.
+You are helping prioritize work for the Reposcope Cursor plugin.
 
 Given the current `.cursor-plugin/plugin.json` manifest, Python skills under `skills/`, and any open Game Plan goals:
 

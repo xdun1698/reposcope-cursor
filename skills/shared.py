@@ -1,4 +1,4 @@
-"""Shared constants and utilities for CodeWalker skill scripts."""
+"""Shared constants and utilities for Reposcope skill scripts."""
 
 import os
 from pathlib import Path

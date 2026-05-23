@@ -12,7 +12,7 @@ VULN_SCAN_SUFFIXES = frozenset(TEXT_SUFFIXES - SCAN_SKIP_SUFFIXES)
 COMMENT_PREFIX_RE = re.compile(r"^\s*(//|#|/\*|\*|<!--)")
 
 ENV_FALLBACK_RE = re.compile(
-    r"(process\.env\.\w+|Environment\.GetEnvironmentVariable|os\.getenv|os\.environ)"
+    r"(process\.env\.\w+|Environment\.GetEnvironmentVariable|os\.getenv|os\.environ|ENV\[|ENV\.fetch)"
 )
 
 

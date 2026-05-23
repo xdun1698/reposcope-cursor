@@ -1,10 +1,10 @@
 ---
-description: CodeWalker project conventions for contributors and AI agents working on this codebase
+description: Reposcope project conventions for contributors and AI agents working on this codebase
 alwaysApply: false
 globs: "**/*.{ts,tsx,py}"
 ---
 
-CodeWalker project conventions:
+Reposcope project conventions:
 
 - Use functional and declarative patterns. Avoid classes unless required by the VS Code API (e.g. WebviewViewProvider).
 - Prefer pure functions that don't mutate inputs or global state.
