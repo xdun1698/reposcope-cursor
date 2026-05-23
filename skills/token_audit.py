@@ -28,6 +28,8 @@ def _collect_import_names(tree: ast.AST) -> set[str]:
                 base = alias.name.split(".")[0]
                 names.add(alias.asname or base)
         elif isinstance(node, ast.ImportFrom):
+            if node.module == "__future__":
+                continue
             for alias in node.names:
                 if alias.name == "*":
                     continue
@@ -49,13 +51,22 @@ def _collect_used_names(tree: ast.AST) -> set[str]:
 def _collect_defs_and_calls(tree: ast.AST) -> tuple[set[str], set[str]]:
     defs: set[str] = set()
     calls: set[str] = set()
+    method_names: set[str] = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.ClassDef):
+            for item in node.body:
+                if isinstance(item, (ast.FunctionDef, ast.AsyncFunctionDef)):
+                    method_names.add(item.name)
     for node in ast.walk(tree):
         if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
-            defs.add(node.name)
+            if node.name not in method_names:
+                defs.add(node.name)
         if isinstance(node, ast.Call):
             fn = node.func
             if isinstance(fn, ast.Name):
                 calls.add(fn.id)
+            elif isinstance(fn, ast.Attribute):
+                calls.add(fn.attr)
     return defs, calls
 
 

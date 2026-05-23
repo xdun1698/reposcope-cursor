@@ -1,7 +1,7 @@
-# CodeWalker — Cursor Plugin
+# Reposcope — Cursor Plugin
 
 <p align="center">
-  <img src="assets/codewalker-icon.png" alt="CodeWalker" width="128"/>
+  <img src="assets/reposcope-icon.png" alt="Reposcope" width="128"/>
 </p>
 
 <p align="center">
@@ -9,17 +9,17 @@
 </p>
 
 <p align="center">
-  <a href="vscode:extension/nxgentech.codewalker"><img src="https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white" alt="Install in VS Code / Cursor"/></a>
-  <a href="https://open-vsx.org/extension/nxgentech/codewalker"><img src="https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white" alt="OpenVSX"/></a>
+  <a href="vscode:extension/nxgentech.reposcope"><img src="https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white" alt="Install in VS Code / Cursor"/></a>
+  <a href="https://open-vsx.org/extension/nxgentech/reposcope"><img src="https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white" alt="OpenVSX"/></a>
   <a href="https://cursor.com/marketplace"><img src="https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white" alt="Cursor Marketplace"/></a>
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License"/>
 </p>
 
 ---
 
-## What is CodeWalker?
+## What is Reposcope?
 
-CodeWalker is a developer productivity plugin for [Cursor](https://cursor.com) that helps you understand large codebases, eliminate LLM token waste, and catch security issues before they ship.
+Reposcope is a developer productivity plugin for [Cursor](https://cursor.com) that helps you understand large codebases, eliminate LLM token waste, and catch security issues before they ship.
 
 ### Token Waste Detection
 
@@ -46,19 +46,19 @@ AI-powered goal suggestions based on your repo analysis. Track progress, mark go
 Click the **Install** badge above or paste into the Command Palette (`Cmd+Shift+P`):
 
 ```
-ext install nxgentech.codewalker
+ext install nxgentech.reposcope
 ```
 
 The extension auto-registers the bundled Cursor plugin — hooks, skills, and commands activate immediately on any repo.
 
 ### Cursor Plugin Marketplace
 
-Search **"CodeWalker"** in the Cursor plugin marketplace (`Cmd+Shift+P` -> `Cursor: Open Plugin Marketplace`).
+Search **"Reposcope"** in the Cursor plugin marketplace (`Cmd+Shift+P` -> `Cursor: Open Plugin Marketplace`).
 
 ### One-command install (alternative)
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/xdun1698/codewalker-cursor/main/scripts/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/scripts/install.sh)
 ```
 
 ---
@@ -81,7 +81,7 @@ commands/
 hooks/
 └── hooks.json                 Event-driven automation hooks
 assets/
-└── codewalker-icon.png        Branding
+└── reposcope-icon.png        Branding
 ```
 
 ---

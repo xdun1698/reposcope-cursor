@@ -1,8 +1,8 @@
 ---
 name: game-plan
 description: >
-  Manage the CodeWalker Game Plan — a persistent task list stored in
-  .codewalker-gameplan.json. Reads agent output and extracts actionable
+  Manage the Reposcope Game Plan — a persistent task list stored in
+  .reposcope-gameplan.json. Reads agent output and extracts actionable
   goals. Use when the user asks about goals, next steps, or wants to
   update their project plan from AI agent output.
 ---
@@ -18,12 +18,12 @@ description: >
 
 ## Instructions
 
-1. Read the existing `.codewalker-gameplan.json` from the workspace root (create if absent).
+1. Read the existing `.reposcope-gameplan.json` from the workspace root (create if absent).
 2. If agent output is provided, parse it for actionable goals.
 3. Merge new goals with existing ones (deduplicate by task text).
 4. Categorize goals: security, performance, refactor, test, docs, general.
 5. For each goal, include a priority (high/medium/low) and affected files when identifiable.
-6. Write the updated plan back to `.codewalker-gameplan.json`.
+6. Write the updated plan back to `.reposcope-gameplan.json`.
 
 ## Output format
 
