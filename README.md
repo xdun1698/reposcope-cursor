@@ -1,7 +1,7 @@
 # Reposcope — Cursor Plugin
 
 <p align="center">
-  <img src="assets/reposcope-icon.png" alt="Reposcope" width="128"/>
+  <img src="https://open-vsx.org/api/nxgentech/reposcope-ai/latest/file/reposcope-icon.png" alt="RepoScope radar logo" width="128"/>
 </p>
 
 <p align="center">
@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="vscode:extension/nxgentech.reposcope"><img src="https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white" alt="Install in VS Code / Cursor"/></a>
-  <a href="https://open-vsx.org/extension/nxgentech/reposcope"><img src="https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white" alt="OpenVSX"/></a>
+  <a href="vscode:extension/nxgentech.reposcope-ai"><img src="https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white" alt="Install in VS Code / Cursor"/></a>
+  <a href="https://open-vsx.org/extension/nxgentech/reposcope-ai"><img src="https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white" alt="OpenVSX"/></a>
   <a href="https://cursor.com/marketplace"><img src="https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white" alt="Cursor Marketplace"/></a>
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License"/>
 </p>
@@ -46,7 +46,7 @@ AI-powered goal suggestions based on your repo analysis. Track progress, mark go
 Click the **Install** badge above or paste into the Command Palette (`Cmd+Shift+P`):
 
 ```
-ext install nxgentech.reposcope
+ext install nxgentech.reposcope-ai
 ```
 
 The extension auto-registers the bundled Cursor plugin — hooks, skills, and commands activate immediately on any repo.
@@ -90,18 +90,17 @@ assets/
 
 | Plan | Price | Included |
 |------|-------|----------|
-| **Free** | $0 | 3 analyses/day, basic graph view |
-| **Pro** | $9.99/mo | 500K repo-token pool/mo on Insight (baseline) · Token Waste · Security · Repo Map · Game Plan |
-| **Annual** | $89/yr | Same as Pro, ~26% savings |
-| **Team** | $9.99/mo per user | Same as Pro · Multi-seat · Shared history · Webhook alerts |
+| **Free** | $0 | 3 analyses/day · Core RepoScope tabs · No credit card required |
+| **Pro** | $9.99/mo | 500K repo-token pool/mo · Token Waste · Security · Repo Map · Game Plan · AI goal suggestions |
+| **Annual** | $89/yr | Same as Pro · ~26% savings vs monthly |
 
-Manage billing at [nxgentechsolutions.com/billing](https://nxgentechsolutions.com/billing).
+Manage billing at [reposcope.app](https://reposcope.app).
 
 ---
 
 ## Support
 
-Questions, bugs, or feedback: **[support@nxgentechsolutions.com](mailto:support@nxgentechsolutions.com)**
+Questions, bugs, or feedback: **[support@reposcope.app](mailto:support@reposcope.app)**
 
 ---
 
