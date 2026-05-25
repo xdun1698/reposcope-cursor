@@ -1,6 +1,6 @@
 {
   "name": "reposcope",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "AI Cost Intelligence for any repo: token waste detector, security heatmap, interactive repo map, and AI game-plan tracker. Works on any language/framework — no repo-specific setup required.",
   "author": {
     "name": "NxGen Tech Solutions",
