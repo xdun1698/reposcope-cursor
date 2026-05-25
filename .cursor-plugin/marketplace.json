@@ -2,7 +2,7 @@
   "name": "reposcope-marketplace",
   "owner": {
     "name": "NxGen Tech Solutions",
-    "email": "support@nxgentechsolutions.com"
+    "email": "support@reposcope.app"
   },
   "metadata": {
     "description": "Developer productivity plugins from NxGen Tech Solutions"
@@ -12,12 +12,12 @@
       "name": "reposcope",
       "source": ".",
       "description": "AI Cost Intelligence for any repo: token waste detector, security heatmap, interactive repo map, and AI game-plan tracker. Works on any language/framework — no repo-specific setup required.",
-      "version": "1.6.0",
+      "version": "2.0.4",
       "author": {
         "name": "NxGen Tech Solutions",
-        "email": "support@nxgentechsolutions.com"
+        "email": "support@reposcope.app"
       },
-      "homepage": "https://reposcope.dev",
+      "homepage": "https://reposcope.app",
       "repository": "https://github.com/xdun1698/reposcope-cursor",
       "license": "MIT",
       "logo": "assets/reposcope-icon.png",

@@ -92,8 +92,7 @@ else
   fi
 
   info "Packaging VSIX…"
-  # --no-dependencies: skip marketplace git check for local builds
-  (cd "$CW_REPO_DIR" && eval "$VSCE_BIN" package --no-dependencies --out reposcope-latest.vsix) \
+  (cd "$CW_REPO_DIR" && eval "$VSCE_BIN" package --out reposcope-latest.vsix) \
     || die "vsce package failed. Run 'npm run compile' in $CW_REPO_DIR to diagnose."
 fi
 
@@ -198,4 +197,4 @@ else
 fi
 echo ""
 echo "  Docs: https://github.com/xdun1698/reposcope-cursor"
-echo "  Support: support@nxgentechsolutions.com"
+echo "  Support: support@reposcope.app"
