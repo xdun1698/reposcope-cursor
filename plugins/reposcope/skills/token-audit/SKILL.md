@@ -9,6 +9,8 @@ description: >
 
 # Token Audit
 
+> Tier: Free. Token Waste is part of the free standalone RepoScope plugin and runs fully locally with no license or network.
+
 ## When to use
 
 - User asks "which files are wasting tokens?" or "what's eating my context budget?"

@@ -200,6 +200,13 @@ def vuln_scan_workspace(workspace_path: str) -> dict:
 
 
 def _main() -> None:
+    from entitlement import require_pro
+
+    ok, gate = require_pro("Security scan")
+    if not ok:
+        print(json.dumps(gate))
+        return
+
     if len(sys.argv) > 1:
         raw = sys.argv[1]
         try:

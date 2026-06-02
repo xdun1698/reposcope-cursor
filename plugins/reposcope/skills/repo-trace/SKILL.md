@@ -9,6 +9,8 @@ description: >
 
 # Repo Trace
 
+> Tier: Free. Repo Map is part of the free standalone RepoScope plugin and runs fully locally with no license or network.
+
 ## When to use
 
 - User asks "what does this repo look like?" or "show me the project structure"

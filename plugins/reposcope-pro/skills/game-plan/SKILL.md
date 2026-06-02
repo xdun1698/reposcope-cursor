@@ -9,6 +9,8 @@ description: >
 
 # Game Plan
 
+> Tier: Pro. Game Plan is a RepoScope Pro feature. Requires a valid license — set `REPOSCOPE_LICENSE_KEY` (your Stripe customer id, `cus_…`) or add a `.reposcope-license` file to the workspace root. Without entitlement the skill returns a `pro_required` upsell instead of updating the plan. Upgrade at https://reposcope.app/pricing.html.
+
 ## When to use
 
 - User asks "what should I work on next?" or "update my game plan"

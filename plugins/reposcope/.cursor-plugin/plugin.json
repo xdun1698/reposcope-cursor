@@ -1,0 +1,19 @@
+{
+  "name": "reposcope",
+  "version": "3.0.0",
+  "description": "Free repo intelligence for any codebase: Token Waste detector and interactive Repo Map. Runs fully locally — no account, no key, no repo-specific setup.",
+  "author": {
+    "name": "NxGen Tech Solutions",
+    "email": "support@reposcope.app"
+  },
+  "logo": "assets/reposcope-icon.png",
+  "homepage": "https://reposcope.app",
+  "repository": "https://github.com/xdun1698/reposcope-cursor",
+  "license": "MIT",
+  "keywords": [
+    "token-analysis",
+    "repo-map",
+    "ai-cost",
+    "code-quality"
+  ]
+}

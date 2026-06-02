@@ -1,0 +1,20 @@
+{
+  "name": "reposcope-pro",
+  "version": "3.0.0",
+  "description": "RepoScope Pro: security vulnerability scanning and the AI Game Plan with suggested goals. Requires a RepoScope Pro license (Stripe customer id via REPOSCOPE_LICENSE_KEY or a .reposcope-license file).",
+  "author": {
+    "name": "NxGen Tech Solutions",
+    "email": "support@reposcope.app"
+  },
+  "logo": "assets/reposcope-icon.png",
+  "homepage": "https://reposcope.app/pricing",
+  "repository": "https://github.com/xdun1698/reposcope-cursor",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "vulnerability-scan",
+    "game-plan",
+    "ai-goals",
+    "code-quality"
+  ]
+}

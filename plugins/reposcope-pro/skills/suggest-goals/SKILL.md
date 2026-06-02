@@ -9,6 +9,8 @@ description: >
 
 # Suggest Goals
 
+> Tier: Pro. Suggested goals is a RepoScope Pro feature (paired with Game Plan). Requires a valid license — set `REPOSCOPE_LICENSE_KEY` (your Stripe customer id, `cus_…`) or add a `.reposcope-license` file to the workspace root. Without entitlement the skill returns a `pro_required` upsell. Upgrade at https://reposcope.app/pricing.html.
+
 ## When to use
 
 - User clicks "Suggest Goals" in the Reposcope sidebar

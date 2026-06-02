@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "python3 skills/token_audit.py",
+        "matcher": "\\.(ts|js|tsx|jsx|py|cs)$"
+      }
+    ]
+  }
+}

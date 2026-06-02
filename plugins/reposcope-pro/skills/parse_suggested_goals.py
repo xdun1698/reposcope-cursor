@@ -42,6 +42,13 @@ def parse_suggested_goals(agent_output: str, current_goals: list | None = None) 
 def _main() -> None:
     import sys
 
+    from entitlement import require_pro
+
+    ok, gate = require_pro("Suggested goals")
+    if not ok:
+        print(json.dumps(gate))
+        return
+
     def emit(data: dict) -> None:
         out = data.get("output", "")
         if not isinstance(out, str):

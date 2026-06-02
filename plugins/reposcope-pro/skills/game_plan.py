@@ -109,6 +109,13 @@ def update_game_plan(_repo_root: str = ".", agent_output: str | None = None) -> 
 def _main() -> None:
     import sys
 
+    from entitlement import require_pro
+
+    ok, gate = require_pro("Game Plan")
+    if not ok:
+        print(json.dumps(gate))
+        return
+
     def emit(data: dict) -> None:
         out = data.get("output") or data.get("agentOutput")
         agent_output = out if isinstance(out, str) else None
