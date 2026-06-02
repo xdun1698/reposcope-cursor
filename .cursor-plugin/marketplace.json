@@ -5,14 +5,15 @@
     "email": "support@reposcope.app"
   },
   "metadata": {
-    "description": "Developer productivity plugins from NxGen Tech Solutions"
+    "description": "Developer productivity plugins from NxGen Tech Solutions",
+    "pluginRoot": "plugins"
   },
   "plugins": [
     {
       "name": "reposcope",
-      "source": ".",
-      "description": "AI Cost Intelligence for any repo: token waste detector, security heatmap, interactive repo map, and AI game-plan tracker. Works on any language/framework — no repo-specific setup required.",
-      "version": "2.0.5",
+      "source": "reposcope",
+      "description": "Free repo intelligence for any codebase: Token Waste detector and interactive Repo Map. Runs fully locally — no account, no key.",
+      "version": "3.0.0",
       "author": {
         "name": "NxGen Tech Solutions",
         "email": "support@reposcope.app"
@@ -23,11 +24,31 @@
       "logo": "assets/reposcope-icon.png",
       "keywords": [
         "token-analysis",
-        "security",
         "repo-map",
         "ai-cost",
-        "code-quality",
-        "game-plan"
+        "code-quality"
+      ],
+      "category": "Code Quality"
+    },
+    {
+      "name": "reposcope-pro",
+      "source": "reposcope-pro",
+      "description": "RepoScope Pro: security vulnerability scanning and the AI Game Plan with suggested goals. Requires a RepoScope Pro license.",
+      "version": "3.0.0",
+      "author": {
+        "name": "NxGen Tech Solutions",
+        "email": "support@reposcope.app"
+      },
+      "homepage": "https://reposcope.app/pricing",
+      "repository": "https://github.com/xdun1698/reposcope-cursor",
+      "license": "MIT",
+      "logo": "assets/reposcope-icon.png",
+      "keywords": [
+        "security",
+        "vulnerability-scan",
+        "game-plan",
+        "ai-goals",
+        "code-quality"
       ],
       "category": "Code Quality"
     }
