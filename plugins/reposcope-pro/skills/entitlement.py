@@ -28,7 +28,7 @@ from pathlib import Path
 # Sync flips this to "1" for the published Pro plugin (see sync-public-plugin.sh).
 _DEFAULT_REQUIRED = "1"
 
-DEFAULT_SERVER_BASE = "https://codewalker-server-production.up.railway.app"
+DEFAULT_SERVER_BASE = "https://api.reposcope.app"
 PRICING_URL = "https://reposcope.app/pricing.html"
 _TIMEOUT_S = 5
 _FALSEY = frozenset({"", "0", "false", "no", "off"})
