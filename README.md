@@ -1,11 +1,12 @@
-# Reposcope — Cursor Plugin
+# RepoScope — Cursor Plugin
 
 <p align="center">
   <img src="https://open-vsx.org/api/nxgentech/reposcope-ai/latest/file/reposcope-icon.png" alt="RepoScope radar logo" width="128"/>
 </p>
 
 <p align="center">
-  <strong>Token waste detection, security scanning, repo mapping, and game plan tracking — right inside Cursor.</strong>
+  <strong>See your code. Know its cost. Ship smarter.</strong><br/>
+  AI Cost Intelligence — token waste, security, 3D repo map, and persistent AI context, right inside Cursor.
 </p>
 
 <p align="center">
@@ -17,9 +18,9 @@
 
 ---
 
-## What is Reposcope?
+## What is RepoScope?
 
-Reposcope is a developer productivity plugin for [Cursor](https://cursor.com) that helps you understand large codebases, eliminate LLM token waste, and catch security issues before they ship.
+RepoScope is a developer productivity plugin for [Cursor](https://cursor.com) that helps you understand large codebases, eliminate LLM token waste, and catch security issues before they ship.
 
 ### Token Waste Detection
 
@@ -29,7 +30,7 @@ See exactly which files eat your LLM context budget. BPE-accurate token counts p
 
 Real-time vulnerability detection: hardcoded secrets, injection risks, dependency issues. Findings are color-coded by severity with one-click fix suggestions.
 
-### Repo Map
+### 3D Repo Map
 
 Live interactive map of your repository — file tree with token density, import graph, and Cursor session history. Click any node to jump to the file.
 
@@ -53,7 +54,7 @@ The extension auto-registers the bundled Cursor plugin — hooks, skills, and co
 
 ### Cursor Plugin Marketplace
 
-Search **"Reposcope"** in the Cursor plugin marketplace (`Cmd+Shift+P` -> `Cursor: Open Plugin Marketplace`).
+Search **"RepoScope"** in the Cursor plugin marketplace (`Cmd+Shift+P` -> `Cursor: Open Plugin Marketplace`).
 
 ### One-command install (alternative)
 
@@ -90,9 +91,11 @@ assets/
 
 | Plan | Price | Included |
 |------|-------|----------|
-| **Free** | $0 | 3 analyses/day · Core RepoScope tabs · No credit card required |
-| **Pro** | $9.99/mo | 500K repo-token pool/mo · Token Waste · Security · Repo Map · Game Plan · AI goal suggestions |
+| **Free** | $0 | 3 analyses/day · Token Waste · 3D Repo Map · No credit card required |
+| **Pro** | $9.99/mo | 500K repo-token pool/mo · Everything in Free + Security · Game Plan · AI goal suggestions |
 | **Annual** | $89/yr | Same as Pro · ~26% savings vs monthly |
+
+> **Try Pro free for 7 days — no credit card.** Run **RepoScope: Start Free 7-Day Pro Trial** from the Command Palette to unlock Security and the AI Game Plan locally.
 
 Manage billing at [reposcope.app](https://reposcope.app).
 
