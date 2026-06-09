@@ -86,9 +86,9 @@ assets/
 
 | Plan | Price | Included |
 |------|-------|----------|
-| **Free** | $0 | 3 analyses/day · Token Waste · 3D Repo Map · No credit card required |
-| **Pro** | $9.99/mo | 500K repo-token pool/mo · Everything in Free + Security · Game Plan · AI goal suggestions |
-| **Annual** | $89/yr | Same as Pro · ~26% savings vs monthly |
+| **Free** | $0 | Token Waste · 3D Repo Map · Unlimited scans · No credit card required |
+| **Pro** | $9.99/mo | Everything in Free + Security · Game Plan · AI goal suggestions · Unlimited scans |
+| **Annual** | $89/yr | Same as Pro · Unlimited scans · ~26% savings vs monthly |
 
 > **Try Pro free for 7 days — no credit card.** Run **RepoScope: Start Free 7-Day Pro Trial** from the Command Palette to unlock Security and the AI Game Plan locally.
 
