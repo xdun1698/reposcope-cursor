@@ -1,20 +1,15 @@
 # RepoScope — Cursor Plugin
 
-<p align="center">
-  <img src="https://open-vsx.org/api/nxgentech/reposcope-ai/latest/file/reposcope-icon.png" alt="RepoScope radar logo" width="128"/>
-</p>
+**See your code. Know its cost. Ship smarter.** — AI Cost Intelligence: token waste, security, 3D repo map, and persistent AI context, right inside Cursor.
 
-<p align="center">
-  <strong>See your code. Know its cost. Ship smarter.</strong><br/>
-  AI Cost Intelligence — token waste, security, 3D repo map, and persistent AI context, right inside Cursor.
-</p>
+[![Install — VS Code / Cursor](https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white)](vscode:extension/nxgentech.reposcope-ai)
+[![OpenVSX — Registry](https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white)](https://open-vsx.org/extension/nxgentech/reposcope-ai)
+[![Cursor — Marketplace](https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white)](https://cursor.com/marketplace)
+![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-<p align="center">
-  <a href="vscode:extension/nxgentech.reposcope-ai"><img src="https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white" alt="Install in VS Code / Cursor"/></a>
-  <a href="https://open-vsx.org/extension/nxgentech/reposcope-ai"><img src="https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white" alt="OpenVSX"/></a>
-  <a href="https://cursor.com/marketplace"><img src="https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white" alt="Cursor Marketplace"/></a>
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="License"/>
-</p>
+![RepoScope — Token Waste: find the files burning your AI budget](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/assets/screenshots/reposcope-token-waste.png)
+
+> **Local-first:** scans run on your machine via bundled ast-grep. Only anonymous funnel events leave your machine, and you can disable them with `reposcope.telemetry`.
 
 ---
 
@@ -107,6 +102,4 @@ Questions, bugs, or feedback: **[support@reposcope.app](mailto:support@reposcope
 
 ---
 
-<p align="center">
-  Built by <a href="https://nxgentechsolutions.com">NxGen Tech Solutions</a>
-</p>
+Built by [NxGen Tech Solutions](https://nxgentechsolutions.com)

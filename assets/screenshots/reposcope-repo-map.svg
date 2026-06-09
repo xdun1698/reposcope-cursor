@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#050810"/>
+  <circle cx="1260" cy="-80" r="420" fill="#00d18c" opacity="0.08"/>
+  <circle cx="-80" cy="760" r="360" fill="#00a8ff" opacity="0.08"/>
+  <rect x="64" y="48" width="1472" height="804" rx="36" fill="#0a1322" stroke="#1a2340" stroke-width="2"/>
+  <g transform="translate(104 88)">
+    <circle cx="28" cy="28" r="26" fill="#0e1730" stroke="#00d18c" stroke-width="2"/>
+    <circle cx="28" cy="28" r="16" fill="none" stroke="#00d18c" opacity="0.6" stroke-width="2"/>
+    <circle cx="28" cy="28" r="7" fill="#00f0a8"/>
+    <text x="72" y="25" fill="#f0f4ff" font-family="Helvetica" font-size="28" font-weight="700">RepoScope</text>
+    <text x="72" y="52" fill="#8892a4" font-family="Helvetica" font-size="16">AI Cost Intelligence for Cursor, VS Code, and Windsurf</text>
+  </g>
+  <text x="104" y="198" fill="#f0f4ff" font-family="Helvetica" font-size="56" font-weight="800">Understand any repo in 90 seconds</text>
+  <text x="106" y="238" fill="#8892a4" font-family="Helvetica" font-size="22">A live dependency graph where nodes are files, edges are imports, and color is token cost.</text>
+
+  <rect x="104" y="300" width="260" height="120" rx="22" fill="#0e1730" stroke="#1a2340"/>
+    <text x="130" y="352" fill="#00d18c" font-family="Helvetica" font-size="36" font-weight="800">847</text>
+    <text x="130" y="386" fill="#8892a4" font-family="Helvetica" font-size="18">files mapped</text>
+  <rect x="392" y="300" width="260" height="120" rx="22" fill="#0e1730" stroke="#1a2340"/>
+    <text x="418" y="352" fill="#00d18c" font-family="Helvetica" font-size="36" font-weight="800">23</text>
+    <text x="418" y="386" fill="#8892a4" font-family="Helvetica" font-size="18">directories</text>
+  <rect x="680" y="300" width="260" height="120" rx="22" fill="#0e1730" stroke="#1a2340"/>
+    <text x="706" y="352" fill="#00a8ff" font-family="Helvetica" font-size="36" font-weight="800">8</text>
+    <text x="706" y="386" fill="#8892a4" font-family="Helvetica" font-size="18">layout modes</text>
+  <rect x="104" y="468" width="1328" height="298" rx="24" fill="#0e1730" stroke="#1a2340"/>
+  <text x="132" y="520" fill="#f0f4ff" font-family="Helvetica" font-size="24" font-weight="700">3D Repo Map</text>
+  <line x1="392" y1="606" x2="560" y2="560" stroke="#1a2340" stroke-width="3"/><line x1="560" y1="560" x2="740" y2="630" stroke="#1a2340" stroke-width="3"/><line x1="740" y1="630" x2="930" y2="548" stroke="#1a2340" stroke-width="3"/><line x1="930" y1="548" x2="1130" y2="650" stroke="#1a2340" stroke-width="3"/><line x1="560" y1="560" x2="880" y2="708" stroke="#1a2340" stroke-width="3"/><line x1="392" y1="606" x2="620" y2="714" stroke="#1a2340" stroke-width="3"/><line x1="930" y1="548" x2="1210" y2="548" stroke="#1a2340" stroke-width="3"/>
+  <circle cx="392" cy="606" r="36" fill="#00d18c"/><text x="392" y="670" fill="#8892a4" font-family="Helvetica" font-size="15" text-anchor="middle">src/</text><circle cx="560" cy="560" r="48" fill="#f87171"/><text x="560" y="636" fill="#8892a4" font-family="Helvetica" font-size="15" text-anchor="middle">components</text><circle cx="740" cy="630" r="30" fill="#fbbf24"/><text x="740" y="688" fill="#8892a4" font-family="Helvetica" font-size="15" text-anchor="middle">Dashboard</text><circle cx="930" cy="548" r="44" fill="#00a8ff"/><text x="930" y="620" fill="#8892a4" font-family="Helvetica" font-size="15" text-anchor="middle">api</text><circle cx="1130" cy="650" r="34" fill="#00d18c"/><text x="1130" y="712" fill="#8892a4" font-family="Helvetica" font-size="15" text-anchor="middle">auth</text><circle cx="880" cy="708" r="26" fill="#fbbf24"/><text x="880" y="762" fill="#8892a4" font-family="Helvetica" font-size="15" text-anchor="middle">utils</text><circle cx="1210" cy="548" r="24" fill="#00d18c"/><text x="1210" y="600" fill="#8892a4" font-family="Helvetica" font-size="15" text-anchor="middle">tests</text><circle cx="620" cy="714" r="22" fill="#00a8ff"/><text x="620" y="764" fill="#8892a4" font-family="Helvetica" font-size="15" text-anchor="middle">hooks</text>
+  <text x="1190" y="730" fill="#8892a4" font-family="Helvetica" font-size="18">High token density = red</text>
+</svg>

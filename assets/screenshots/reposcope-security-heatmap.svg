@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#050810"/>
+  <circle cx="1260" cy="-80" r="420" fill="#00d18c" opacity="0.08"/>
+  <circle cx="-80" cy="760" r="360" fill="#00a8ff" opacity="0.08"/>
+  <rect x="64" y="48" width="1472" height="804" rx="36" fill="#0a1322" stroke="#1a2340" stroke-width="2"/>
+  <g transform="translate(104 88)">
+    <circle cx="28" cy="28" r="26" fill="#0e1730" stroke="#00d18c" stroke-width="2"/>
+    <circle cx="28" cy="28" r="16" fill="none" stroke="#00d18c" opacity="0.6" stroke-width="2"/>
+    <circle cx="28" cy="28" r="7" fill="#00f0a8"/>
+    <text x="72" y="25" fill="#f0f4ff" font-family="Helvetica" font-size="28" font-weight="700">RepoScope</text>
+    <text x="72" y="52" fill="#8892a4" font-family="Helvetica" font-size="16">AI Cost Intelligence for Cursor, VS Code, and Windsurf</text>
+  </g>
+  <text x="104" y="198" fill="#f0f4ff" font-family="Helvetica" font-size="56" font-weight="800">Catch risky code before your AI depends on it</text>
+  <text x="106" y="238" fill="#8892a4" font-family="Helvetica" font-size="22">Secrets, injection patterns, and unsafe calls shown as visual clusters, not a flat list.</text>
+
+  <rect x="104" y="300" width="260" height="120" rx="22" fill="#0e1730" stroke="#1a2340"/>
+    <text x="130" y="352" fill="#f87171" font-family="Helvetica" font-size="36" font-weight="800">3</text>
+    <text x="130" y="386" fill="#8892a4" font-family="Helvetica" font-size="18">critical findings</text>
+  <rect x="392" y="300" width="260" height="120" rx="22" fill="#0e1730" stroke="#1a2340"/>
+    <text x="418" y="352" fill="#fbbf24" font-family="Helvetica" font-size="36" font-weight="800">5</text>
+    <text x="418" y="386" fill="#8892a4" font-family="Helvetica" font-size="18">medium findings</text>
+  <rect x="680" y="300" width="260" height="120" rx="22" fill="#0e1730" stroke="#1a2340"/>
+    <text x="706" y="352" fill="#00d18c" font-family="Helvetica" font-size="36" font-weight="800">0</text>
+    <text x="706" y="386" fill="#8892a4" font-family="Helvetica" font-size="18">low noise</text>
+  <rect x="104" y="468" width="584" height="298" rx="24" fill="#0e1730" stroke="#1a2340"/>
+  <text x="132" y="520" fill="#f0f4ff" font-family="Helvetica" font-size="24" font-weight="700">Security scanner</text>
+  <text x="132" y="580" fill="#f87171" font-family="Helvetica" font-size="20" font-weight="700">HIGH</text><text x="220" y="580" fill="#f0f4ff" font-family="Helvetica" font-size="20">Hardcoded API key in config/db.ts</text>
+  <text x="132" y="630" fill="#fbbf24" font-family="Helvetica" font-size="20" font-weight="700">MED</text><text x="220" y="630" fill="#f0f4ff" font-family="Helvetica" font-size="20">SQL injection risk in api/users.ts</text>
+  <text x="132" y="680" fill="#fbbf24" font-family="Helvetica" font-size="20" font-weight="700">MED</text><text x="220" y="680" fill="#f0f4ff" font-family="Helvetica" font-size="20">Insecure dependency in lodash</text>
+  <rect x="748" y="300" width="684" height="466" rx="24" fill="#0e1730" stroke="#1a2340"/>
+  <text x="780" y="350" fill="#f0f4ff" font-family="Helvetica" font-size="28" font-weight="700">Risk clusters by module</text>
+  <circle cx="918" cy="492" r="22" fill="#f87171" opacity="0.85"/><circle cx="918" cy="492" r="40" fill="#f87171" opacity="0.12"/><circle cx="1040" cy="578" r="18" fill="#fbbf24" opacity="0.85"/><circle cx="1040" cy="578" r="36" fill="#fbbf24" opacity="0.12"/><circle cx="1220" cy="515" r="15" fill="#00d18c" opacity="0.85"/><circle cx="1220" cy="515" r="33" fill="#00d18c" opacity="0.12"/><circle cx="1140" cy="654" r="19" fill="#00a8ff" opacity="0.85"/><circle cx="1140" cy="654" r="37" fill="#00a8ff" opacity="0.12"/><circle cx="1320" cy="604" r="24" fill="#f87171" opacity="0.85"/><circle cx="1320" cy="604" r="42" fill="#f87171" opacity="0.12"/><circle cx="948" cy="674" r="14" fill="#fbbf24" opacity="0.85"/><circle cx="948" cy="674" r="32" fill="#fbbf24" opacity="0.12"/>
+  <line x1="918" y1="492" x2="1040" y2="578" stroke="#1a2340" stroke-width="3"/><line x1="1040" y1="578" x2="1220" y2="515" stroke="#1a2340" stroke-width="3"/><line x1="1220" y1="515" x2="1320" y2="604" stroke="#1a2340" stroke-width="3"/><line x1="1040" y1="578" x2="1140" y2="654" stroke="#1a2340" stroke-width="3"/><line x1="1140" y1="654" x2="948" y2="674" stroke="#1a2340" stroke-width="3"/>
+</svg>
