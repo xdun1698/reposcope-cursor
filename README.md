@@ -23,7 +23,7 @@ See exactly which files eat your LLM context budget. BPE-accurate token counts p
 
 ### Security Scanning
 
-Real-time vulnerability detection: hardcoded secrets, injection risks, dependency issues. Findings are color-coded by severity with one-click fix suggestions.
+Local, real-time vulnerability detection — **44 detectors** across 14 languages: committed secrets and API/cloud keys (GitHub, Slack, Google, Stripe, JWTs, private keys, DB connection strings, `.env` values), unsafe execution (`eval`, `os.system`, `subprocess`, `child_process`, `Runtime.exec`), framework XSS (`dangerouslySetInnerHTML`, Vue `v-html`, Angular bypass), risky config (permissive CORS, disabled TLS verification), weak crypto, and known-vulnerable npm/pip dependencies. Every finding has a **confidence level** and **CWE ID**; the scan yields a **0–100 security score** with a letter grade and trend. Filter/search/group findings, suppress noise with `.reposcope-ignore`, and export the report to JSON. Best-effort and pattern-based — not a substitute for a professional audit.
 
 ### 3D Repo Map
 
