@@ -21,6 +21,8 @@ RepoScope is a developer productivity plugin for [Cursor](https://cursor.com) th
 
 See exactly which files eat your LLM context budget. BPE-accurate token counts per file let you prune intelligently before sending code to any AI model — saving money and improving output quality.
 
+Track cumulative savings across scans with the built-in Estimated Savings tracker — each re-scan tallies the tokens you've recovered and an estimated dollar amount. Configurable API rate (`reposcope.apiRate`) to match your provider, an optional status-bar total, and a `Copy Savings Summary` command. All local; dollar figures are estimates.
+
 ### Security Scanning
 
 Local, real-time vulnerability detection — **44 detectors** across 14 languages: committed secrets and API/cloud keys (GitHub, Slack, Google, Stripe, JWTs, private keys, DB connection strings, `.env` values), unsafe execution (`eval`, `os.system`, `subprocess`, `child_process`, `Runtime.exec`), framework XSS (`dangerouslySetInnerHTML`, Vue `v-html`, Angular bypass), risky config (permissive CORS, disabled TLS verification), weak crypto, and known-vulnerable npm/pip dependencies. Every finding has a **confidence level** and **CWE ID**; the scan yields a **0–100 security score** with a letter grade and trend. Filter/search/group findings, suppress noise with `.reposcope-ignore`, and export the report to JSON. Best-effort and pattern-based — not a substitute for a professional audit.

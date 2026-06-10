@@ -165,6 +165,8 @@ def token_audit_workspace(workspace_path: str) -> dict:
     return {
         "totalTokens": total_tokens,
         "total_tokens": total_tokens,
+        "file_count": len(per_file),
+        "fileCount": len(per_file),
         "perFile": per_file[:200],
         "hotspots": hotspots,
         "hotspot_count": len(hotspots),
