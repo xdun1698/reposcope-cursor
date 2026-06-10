@@ -39,25 +39,55 @@ AI-powered goal suggestions based on your repo analysis. Track progress, mark go
 
 ## Install
 
-### One-click (Cursor / VS Code)
+There are always **two ways to install** — from the marketplace, or manually
+from the [Open VSX](https://open-vsx.org/extension/nxgentech/reposcope-ai)
+registry. It's the same extension (`nxgentech.reposcope-ai`) either way.
 
-Click the **Install** badge above or paste into the Command Palette (`Cmd+Shift+P`):
+### Cursor
+
+**Way 1 — Cursor Marketplace** _(in review)_
+Our Cursor Marketplace listing is pending review. Once approved, search
+**"RepoScope"** in `Cmd+Shift+P` → `Cursor: Open Plugin Marketplace` and install
+with one click.
+
+**Way 2 — Manual / Open VSX** _(available now)_
+Cursor's Extensions panel is backed by Open VSX, where RepoScope is already
+published:
+
+1. Open **Extensions** (`Cmd+Shift+X`).
+2. Search **RepoScope AI** by publisher **nxgentech** and click **Install**.
+
+Or install the `.vsix` directly:
+
+1. Download the latest `.vsix` from [Open VSX](https://open-vsx.org/extension/nxgentech/reposcope-ai).
+2. **Extensions ⋯ → Install from VSIX…** and pick the downloaded file.
+
+### VS Code
+
+**Way 1 — VS Marketplace** — click the **Install** badge above, or search
+**RepoScope AI** (publisher **nxgentech**) in the Extensions panel (`Cmd+Shift+X`).
+
+**Way 2 — Manual** — from the Command Palette (`Cmd+Shift+P`) or your terminal:
 
 ```
 ext install nxgentech.reposcope-ai
+code --install-extension nxgentech.reposcope-ai
 ```
 
-The extension auto-registers the bundled Cursor plugin — hooks, skills, and commands activate immediately on any repo.
+### Windsurf
 
-### Cursor Plugin Marketplace
+Windsurf uses Open VSX. Search **RepoScope AI** in the Extensions panel, or
+install the `.vsix` from [Open VSX](https://open-vsx.org/extension/nxgentech/reposcope-ai)
+via **Install from VSIX…**.
 
-Search **"RepoScope"** in the Cursor plugin marketplace (`Cmd+Shift+P` -> `Cursor: Open Plugin Marketplace`).
-
-### One-command install (alternative)
+### One-command install (any editor)
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/scripts/install.sh)
 ```
+
+The extension auto-registers the bundled Cursor plugin — hooks, skills, and
+commands activate immediately on any repo.
 
 ---
 
