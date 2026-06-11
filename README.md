@@ -7,7 +7,7 @@
 [![Cursor — Marketplace](https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white)](https://cursor.com/marketplace)
 ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-![RepoScope — Token Waste: find the files burning your AI budget](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/assets/screenshots/reposcope-token-waste.png)
+![RepoScope AI — Token Waste, Security Scanner, 3D Repo Map, Game Plan](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/hero.png)
 
 > **Local-first:** scans run on your machine via bundled ast-grep. Only anonymous funnel events leave your machine, and you can disable them with `reposcope.telemetry`.
 
@@ -23,17 +23,27 @@ See exactly which files eat your LLM context budget. BPE-accurate token counts p
 
 Track cumulative savings across scans with the built-in Estimated Savings tracker — each re-scan tallies the tokens you've recovered and an estimated dollar amount. Configurable API rate (`reposcope.apiRate`) to match your provider, an optional status-bar total, and a `Copy Savings Summary` command. All local; dollar figures are estimates.
 
+In a typical 40K-line TypeScript repo, 4 files often account for 60–70% of the total BPE token budget — usually auto-generated code or config blobs. Excluding them from AI context means cleaner answers and lower API bills.
+
+![Token Waste Analysis — ranked by BPE token cost with estimated savings](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/token-waste.png)
+
 ### Security Scanning
 
 Local, real-time vulnerability detection — **44 detectors** across 14 languages: committed secrets and API/cloud keys (GitHub, Slack, Google, Stripe, JWTs, private keys, DB connection strings, `.env` values), unsafe execution (`eval`, `os.system`, `subprocess`, `child_process`, `Runtime.exec`), framework XSS (`dangerouslySetInnerHTML`, Vue `v-html`, Angular bypass), risky config (permissive CORS, disabled TLS verification), weak crypto, and known-vulnerable npm/pip dependencies. Every finding has a **confidence level** and **CWE ID**; the scan yields a **0–100 security score** with a letter grade and trend. Filter/search/group findings, suppress noise with `.reposcope-ignore`, and export the report to JSON. Best-effort and pattern-based — not a substitute for a professional audit.
+
+![Security Scanner — 44 detectors with severity, confidence, and CWE IDs](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/security-scanner.png)
 
 ### 3D Repo Map
 
 Live interactive map of your repository — file tree with token density, import graph, and Cursor session history. Click any node to jump to the file.
 
+![3D Repo Map — interactive dependency graph colored by token cost](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/repo-map.png)
+
 ### Game Plan
 
 AI-powered goal suggestions based on your repo analysis. Track progress, mark goals complete, and use "Fix with Cursor" to resolve issues directly in the editor.
+
+![AI Game Plan — persistent context across AI sessions](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/game-plan.png)
 
 ---
 
