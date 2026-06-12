@@ -1,13 +1,13 @@
 # RepoScope — Cursor Plugin
 
-**See your code. Know its cost. Ship smarter.** — AI Cost Intelligence: token waste, security, 3D repo map, and persistent AI context, right inside Cursor.
+**See your code. Know its cost. Ship smarter.** — AI Cost Intelligence: token waste, security, a token-ranked repo map, and persistent AI context, right inside Cursor.
 
 [![Install — VS Code / Cursor](https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white)](vscode:extension/nxgentech.reposcope-ai)
 [![OpenVSX — Registry](https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white)](https://open-vsx.org/extension/nxgentech/reposcope-ai)
 [![Cursor — Marketplace](https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white)](https://cursor.com/marketplace)
 ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-![RepoScope AI — Token Waste, Security Scanner, 3D Repo Map, Game Plan](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/hero.png)
+![RepoScope AI — Token Waste, Security Scanner, Repo Map, Game Plan](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/hero.png)
 
 > **Local-first:** scans run on your machine via bundled ast-grep. Only anonymous funnel events leave your machine, and you can disable them with `reposcope.telemetry`.
 
@@ -33,11 +33,11 @@ Local, real-time vulnerability detection — **44 detectors** across 14 language
 
 ![Security Scanner — 44 detectors with severity, confidence, and CWE IDs](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/security-scanner.png)
 
-### 3D Repo Map
+### Repo Map
 
-Live interactive map of your repository — file tree with token density, import graph, and Cursor session history. Click any node to jump to the file.
+Your whole repository at a glance — every source file ranked by token cost with a cost bar, plus the current branch, recent commits, and the files changed in the last commit. Click any file to jump straight to it. Refreshes on save.
 
-![3D Repo Map — interactive dependency graph colored by token cost](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/repo-map.png)
+![Repo Map — files ranked by token cost with branch and recent-commit context](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/repo-map.png)
 
 ### Game Plan
 
@@ -128,7 +128,7 @@ assets/
 
 | Plan | Price | Included |
 |------|-------|----------|
-| **Free** | $0 | Token Waste · 3D Repo Map · Unlimited scans · No credit card required |
+| **Free** | $0 | Token Waste · Repo Map · Unlimited scans · No credit card required |
 | **Pro** | $9.99/mo | Everything in Free + Security · Game Plan · AI goal suggestions · Unlimited scans |
 | **Annual** | $89/yr | Same as Pro · Unlimited scans · ~26% savings vs monthly |
 

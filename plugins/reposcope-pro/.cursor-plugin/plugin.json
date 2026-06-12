@@ -1,6 +1,6 @@
 {
   "name": "reposcope-pro",
-  "version": "4.0.0",
+  "version": "4.1.1",
   "description": "RepoScope Pro: security vulnerability scanning and the AI Game Plan with suggested goals. Requires a RepoScope Pro license (Stripe customer id via REPOSCOPE_LICENSE_KEY or a .reposcope-license file).",
   "author": {
     "name": "NxGen Tech Solutions",

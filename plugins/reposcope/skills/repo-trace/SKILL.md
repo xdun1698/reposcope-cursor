@@ -1,10 +1,9 @@
 ---
 name: repo-trace
 description: >
-  Build an interactive map of the repository structure. Shows the file tree
-  with token density, git history, branch info, and dependency relationships.
-  Use when the user asks for a repo overview, project structure, or
-  dependency graph.
+  Build a map of the repository: every source file ranked by token cost, plus
+  git history, current branch, and the files changed in the last commit. Use
+  when the user asks for a repo overview or project structure.
 ---
 
 # Repo Trace
@@ -16,15 +15,14 @@ description: >
 - User asks "what does this repo look like?" or "show me the project structure"
 - When navigating an unfamiliar codebase for the first time
 - To understand which files changed recently and why
-- To visualize dependency relationships between modules
+- To see which files are the heaviest by token cost
 
 ## Instructions
 
 1. Walk the workspace file tree, excluding common non-source directories (node_modules, .git, build outputs).
 2. Gather git metadata: current branch, recent commits, files changed in the last commit.
-3. Build a dependency graph from import/require statements.
-4. Annotate each file node with its token count from the Token Audit.
-5. Present the tree as an interactive map — users should be able to click any file to open it.
+3. Annotate each file with its token count from the Token Audit and rank files by token cost.
+4. Present the result as a ranked file list — users should be able to click any file to open it.
 
 ## Output format
 
