@@ -1,7 +1,7 @@
 """License/entitlement helper for Pro RepoScope skills.
 
-Free skills (``token_audit``, ``repo_trace``) never import this. Pro skills
-(``vuln_scan``, ``game_plan``, ``parse_suggested_goals``) call
+Free skills (``vuln_scan``, ``repo_trace``) never import this. Pro skills
+(``token_audit``, ``game_plan``, ``parse_suggested_goals``) call
 :func:`require_pro` at the top of their ``_main()``; when license enforcement is
 enabled and the resolved tier is not ``pro``/``team``, they emit an upsell JSON
 object and exit instead of producing results.

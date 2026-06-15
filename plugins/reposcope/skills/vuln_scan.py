@@ -715,15 +715,17 @@ def _scan_source_lines(lines: list, rel: str, workspace_compiled: list, pattern_
 
 
 def _main() -> None:
-    from entitlement import require_pro
-
-    ok, gate = require_pro("Security scan")
-    if not ok:
-        print(json.dumps(gate))
-        return
-
     if len(sys.argv) > 1:
         raw = sys.argv[1]
+        pa = Path(raw)
+        if pa.is_file():
+            try:
+                code = pa.read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                print(json.dumps({"error": "Could not read file"}))
+                return
+            print(json.dumps(vuln_scan({"code": code, "filePath": str(pa.resolve())})))
+            return
         try:
             try:
                 data = json.loads(raw)

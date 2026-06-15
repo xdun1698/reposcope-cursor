@@ -2,8 +2,8 @@
   "hooks": {
     "afterFileEdit": [
       {
-        "command": "python3 skills/token_audit.py",
-        "matcher": "\\.(ts|js|tsx|jsx|py|cs)$"
+        "command": "python3 skills/vuln_scan.py",
+        "matcher": "\\.(ts|js|tsx|jsx|py|cs|rb|php|swift|c|cpp|go|java|kt|rs)$"
       }
     ]
   }

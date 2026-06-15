@@ -12,7 +12,7 @@ description: >
 
 # Vulnerability Scan
 
-> Tier: Pro. Security is a RepoScope Pro feature. Requires a valid license — set `REPOSCOPE_LICENSE_KEY` (your Stripe customer id, `cus_…`) or add a `.reposcope-license` file to the workspace root. Without entitlement the skill returns a `pro_required` upsell instead of findings. Upgrade at https://reposcope.app/pricing.html.
+> Tier: Free. Security is part of the free standalone RepoScope plugin and runs fully locally with no license or network.
 
 ## When to use
 

@@ -1,7 +1,7 @@
 {
   "name": "reposcope",
-  "version": "4.1.2",
-  "description": "Free repo intelligence for any codebase: BPE-accurate Token Waste detection and an interactive Repo Map — the local-first start of AI Cost Intelligence. Runs fully locally (no account, no key); upgrade to Pro for Security scanning and the AI Game Plan.",
+  "version": "4.2.0",
+  "description": "Free repo intelligence for any codebase: pattern-based Security scanning and an interactive Repo Map — the local-first start of AI Cost Intelligence. Runs fully locally (no account, no key); upgrade to Pro for Token Waste analysis and the AI Game Plan.",
   "author": {
     "name": "NxGen Tech Solutions",
     "email": "support@reposcope.app"

@@ -182,6 +182,13 @@ def token_audit_workspace(workspace_path: str) -> dict:
 
 
 def _main() -> None:
+    from entitlement import require_pro
+
+    ok, gate = require_pro("Token Waste analysis")
+    if not ok:
+        print(json.dumps(gate))
+        return
+
     if len(sys.argv) > 1:
         arg1 = sys.argv[1]
         pa = Path(arg1)

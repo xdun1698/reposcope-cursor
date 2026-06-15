@@ -128,11 +128,11 @@ assets/
 
 | Plan | Price | Included |
 |------|-------|----------|
-| **Free** | $0 | Token Waste · Repo Map · Unlimited scans · No credit card required |
-| **Pro** | $9.99/mo | Everything in Free + Security · Game Plan · AI goal suggestions · Unlimited scans |
+| **Free** | $0 | Security · Repo Map · Unlimited scans · No credit card required |
+| **Pro** | $9.99/mo | Everything in Free + Token Waste · Game Plan · AI goal suggestions · Unlimited scans |
 | **Annual** | $89/yr | Same as Pro · Unlimited scans · ~26% savings vs monthly |
 
-> **Try Pro free for 7 days — no credit card.** Run **RepoScope: Start Free 7-Day Pro Trial** from the Command Palette to unlock Security and the AI Game Plan locally.
+> **Try Pro free for 7 days — no credit card.** Run **RepoScope: Start Free 7-Day Pro Trial** from the Command Palette to unlock Token Waste analysis and the AI Game Plan locally.
 
 Manage billing at [reposcope.app](https://reposcope.app).
 
