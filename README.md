@@ -1,13 +1,13 @@
 # RepoScope — Cursor Plugin
 
-**Catch the secrets and risky code in your repo — before your AI builds on them.** Free security scanner + token-ranked repo map inside Cursor; Pro adds token-cost intelligence and a persistent AI game plan.
+**Catch the secrets and risky code in your repo — before your AI builds on them.** Free security scanner + token-ranked repo map inside Cursor; Pro adds Token Budget Intelligence and a persistent AI game plan.
 
 [![Install — VS Code / Cursor](https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white)](vscode:extension/nxgentech.reposcope-ai)
 [![OpenVSX — Registry](https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white)](https://open-vsx.org/extension/nxgentech/reposcope-ai)
 [![Cursor — Marketplace](https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white)](https://cursor.com/marketplace)
 ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-![RepoScope AI — Security Scanner, Repo Map, Token Waste, Game Plan](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/hero.png)
+![RepoScope AI — Security Scanner, Repo Map, Token Budget Intelligence, Game Plan](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/hero.png)
 
 > **Local-first:** scans run on your machine via bundled ast-grep. Only anonymous funnel events leave your machine, and you can disable them with `reposcope.telemetry`.
 
@@ -29,17 +29,19 @@ Your whole repository at a glance — every source file ranked by token cost wit
 
 ![Repo Map — files ranked by token cost with branch and recent-commit context](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/repo-map.png)
 
-### Token Waste Detection — Pro
+### Token Budget Intelligence — Pro
 
-See exactly which files eat your LLM context budget. BPE-accurate token counts per file let you prune intelligently before sending code to any AI model — saving money and improving output quality.
+More than file-level token counts — see exactly what your IDE sends to AI on every prompt, and how fast you're burning through your subscription:
 
-Track cumulative savings across scans with the built-in Estimated Savings tracker — each re-scan tallies the tokens you've recovered and an estimated dollar amount. Configurable API rate (`reposcope.apiRate`) to match your provider, an optional status-bar total, and a `Copy Savings Summary` command. All local; dollar figures are estimates.
+- **Context Overhead Scanner** — estimates the per-prompt token tax from auto-attached rules files, configs, and lockfiles, grouped by category (always-attached only).
+- **Rules Audit** — deep analysis of `.cursorrules`, `.windsurfrules`, and `CLAUDE.md`; flags redundant/duplicated/oversized sections and content that belongs in Game Plan, with one-click Move to Game Plan / Remove / Apply All — each with diff preview + undo.
+- **Subscription Runway** — configure your plan (Cursor Pro, Claude Pro, Windsurf Pro, or custom) and project when you'll exhaust your monthly token budget, with healthy / caution / critical status. Presets prefill an editable budget, not a provider quota.
+- **Optimization Recommendations** — ranked by impact with estimated savings per prompt and per month; apply individually or batch-apply.
+- **BPE Token Cost Analysis** — the foundation: every file ranked by BPE token cost with cumulative savings tracking via the built-in Estimated Savings tracker (configurable API rate `reposcope.apiRate`, optional status-bar total, `Copy Savings Summary`).
 
-In a typical 40K-line TypeScript repo, 4 files often account for 60–70% of the total BPE token budget — usually auto-generated code or config blobs. Excluding them from AI context means cleaner answers and lower API bills.
+In a typical 40K-line TypeScript repo, 4 files often account for 60–70% of the total BPE token budget. All token figures are `~` estimates.
 
-**Token Budget Intelligence** adds four more capabilities on top of the per-file ranking: a **Context Overhead Scanner** (estimates the per-prompt token tax from auto-attached rules files, configs, and lockfiles), a **Rules Audit** (flags redundant/duplicated/oversized rules sections with one-click Move to Game Plan / Remove / Apply All, each with diff preview + undo), a **Subscription Runway** tracker (projects when you'll exhaust your monthly token budget — presets prefill an editable budget, not a provider quota), and ranked **Optimization Recommendations** with estimated savings per prompt and per month. All token figures are `~` estimates.
-
-![Token Waste Analysis — ranked by BPE token cost with estimated savings](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/token-waste.png)
+![Token Budget Intelligence — context overhead, rules audit, subscription runway, and BPE token cost](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/token-waste.png)
 
 ### Game Plan — Pro
 
@@ -131,10 +133,10 @@ assets/
 | Plan | Price | Included |
 |------|-------|----------|
 | **Free** | $0 | Security · Repo Map · Unlimited scans · No credit card required |
-| **Pro** | $9.99/mo | Everything in Free + Token Waste (with Token Budget Intelligence) · Game Plan · AI goal suggestions · Unlimited scans |
+| **Pro** | $9.99/mo | Everything in Free + Token Budget Intelligence · Game Plan · AI goal suggestions · Unlimited scans |
 | **Annual** | $89/yr | Same as Pro · Unlimited scans · ~26% savings vs monthly |
 
-> **Try Pro free for 7 days — no credit card.** Run **RepoScope: Start Free 7-Day Pro Trial** from the Command Palette to unlock Token Waste analysis (with Token Budget Intelligence) and the AI Game Plan locally.
+> **Try Pro free for 7 days — no credit card.** Run **RepoScope: Start Free 7-Day Pro Trial** from the Command Palette to unlock Token Budget Intelligence (context overhead, rules audit, subscription runway, recommendations), BPE token cost analysis, and the AI Game Plan locally.
 
 Manage billing at [reposcope.app](https://reposcope.app).
 

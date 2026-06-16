@@ -13,7 +13,7 @@
       "name": "reposcope",
       "source": "reposcope",
       "description": "Free repo intelligence for any codebase: pattern-based Security scanning and a token-ranked Repo Map — the local-first start of AI Cost Intelligence. Runs fully locally — no account, no key.",
-      "version": "4.3.0",
+      "version": "4.3.1",
       "author": {
         "name": "NxGen Tech Solutions",
         "email": "support@reposcope.app"
@@ -33,8 +33,8 @@
     {
       "name": "reposcope-pro",
       "source": "reposcope-pro",
-      "description": "RepoScope Pro: Token Waste analysis with Token Budget Intelligence (context overhead, rules audit, subscription runway, optimization recommendations) and the AI Game Plan with suggested goals. Requires a RepoScope Pro license.",
-      "version": "4.3.0",
+      "description": "RepoScope Pro: Token Budget Intelligence — context overhead, rules audit, subscription runway, optimization recommendations, and BPE token cost per file — plus the AI Game Plan with suggested goals. Requires a RepoScope Pro license.",
+      "version": "4.3.1",
       "author": {
         "name": "NxGen Tech Solutions",
         "email": "support@reposcope.app"
