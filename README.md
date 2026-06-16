@@ -1,13 +1,13 @@
 # RepoScope — Cursor Plugin
 
-**See your code. Know its cost. Ship smarter.** — AI Cost Intelligence: token waste, security, a token-ranked repo map, and persistent AI context, right inside Cursor.
+**Catch the secrets and risky code in your repo — before your AI builds on them.** Free security scanner + token-ranked repo map inside Cursor; Pro adds token-cost intelligence and a persistent AI game plan.
 
 [![Install — VS Code / Cursor](https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white)](vscode:extension/nxgentech.reposcope-ai)
 [![OpenVSX — Registry](https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white)](https://open-vsx.org/extension/nxgentech/reposcope-ai)
 [![Cursor — Marketplace](https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white)](https://cursor.com/marketplace)
 ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-![RepoScope AI — Token Waste, Security Scanner, Repo Map, Game Plan](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/hero.png)
+![RepoScope AI — Security Scanner, Repo Map, Token Waste, Game Plan](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/hero.png)
 
 > **Local-first:** scans run on your machine via bundled ast-grep. Only anonymous funnel events leave your machine, and you can disable them with `reposcope.telemetry`.
 
@@ -15,9 +15,21 @@
 
 ## What is RepoScope?
 
-RepoScope is a developer productivity plugin for [Cursor](https://cursor.com) that helps you understand large codebases, eliminate LLM token waste, and catch security issues before they ship.
+RepoScope is a developer productivity plugin for [Cursor](https://cursor.com) that scans your repo for secrets and risky code, maps it by token cost, and — with Pro — shows what each file costs to analyze with AI. The security scanner and repo map are free on every install.
 
-### Token Waste Detection
+### Security Scanning — Free
+
+Local, real-time vulnerability detection — **44 detectors** across 14 languages: committed secrets and API/cloud keys (GitHub, Slack, Google, Stripe, JWTs, private keys, DB connection strings, `.env` values), unsafe execution (`eval`, `os.system`, `subprocess`, `child_process`, `Runtime.exec`), framework XSS (`dangerouslySetInnerHTML`, Vue `v-html`, Angular bypass), risky config (permissive CORS, disabled TLS verification), weak crypto, and known-vulnerable npm/pip dependencies. Every finding has a **confidence level** and **CWE ID**; the scan yields a **0–100 security score** with a letter grade and trend. Filter/search/group findings, suppress noise with `.reposcope-ignore`, and export the report to JSON. Best-effort and pattern-based — not a substitute for a professional audit.
+
+![Security Scanner — 44 detectors with severity, confidence, and CWE IDs](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/security-scanner.png)
+
+### Repo Map — Free
+
+Your whole repository at a glance — every source file ranked by token cost with a cost bar, plus the current branch, recent commits, and the files changed in the last commit. Click any file to jump straight to it. Refreshes on save.
+
+![Repo Map — files ranked by token cost with branch and recent-commit context](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/repo-map.png)
+
+### Token Waste Detection — Pro
 
 See exactly which files eat your LLM context budget. BPE-accurate token counts per file let you prune intelligently before sending code to any AI model — saving money and improving output quality.
 
@@ -25,21 +37,11 @@ Track cumulative savings across scans with the built-in Estimated Savings tracke
 
 In a typical 40K-line TypeScript repo, 4 files often account for 60–70% of the total BPE token budget — usually auto-generated code or config blobs. Excluding them from AI context means cleaner answers and lower API bills.
 
+**Token Budget Intelligence** adds four more capabilities on top of the per-file ranking: a **Context Overhead Scanner** (estimates the per-prompt token tax from auto-attached rules files, configs, and lockfiles), a **Rules Audit** (flags redundant/duplicated/oversized rules sections with one-click Move to Game Plan / Remove / Apply All, each with diff preview + undo), a **Subscription Runway** tracker (projects when you'll exhaust your monthly token budget — presets prefill an editable budget, not a provider quota), and ranked **Optimization Recommendations** with estimated savings per prompt and per month. All token figures are `~` estimates.
+
 ![Token Waste Analysis — ranked by BPE token cost with estimated savings](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/token-waste.png)
 
-### Security Scanning
-
-Local, real-time vulnerability detection — **44 detectors** across 14 languages: committed secrets and API/cloud keys (GitHub, Slack, Google, Stripe, JWTs, private keys, DB connection strings, `.env` values), unsafe execution (`eval`, `os.system`, `subprocess`, `child_process`, `Runtime.exec`), framework XSS (`dangerouslySetInnerHTML`, Vue `v-html`, Angular bypass), risky config (permissive CORS, disabled TLS verification), weak crypto, and known-vulnerable npm/pip dependencies. Every finding has a **confidence level** and **CWE ID**; the scan yields a **0–100 security score** with a letter grade and trend. Filter/search/group findings, suppress noise with `.reposcope-ignore`, and export the report to JSON. Best-effort and pattern-based — not a substitute for a professional audit.
-
-![Security Scanner — 44 detectors with severity, confidence, and CWE IDs](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/security-scanner.png)
-
-### Repo Map
-
-Your whole repository at a glance — every source file ranked by token cost with a cost bar, plus the current branch, recent commits, and the files changed in the last commit. Click any file to jump straight to it. Refreshes on save.
-
-![Repo Map — files ranked by token cost with branch and recent-commit context](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/repo-map.png)
-
-### Game Plan
+### Game Plan — Pro
 
 AI-powered goal suggestions based on your repo analysis. Track progress, mark goals complete, and use "Fix with Cursor" to resolve issues directly in the editor.
 
@@ -129,10 +131,10 @@ assets/
 | Plan | Price | Included |
 |------|-------|----------|
 | **Free** | $0 | Security · Repo Map · Unlimited scans · No credit card required |
-| **Pro** | $9.99/mo | Everything in Free + Token Waste · Game Plan · AI goal suggestions · Unlimited scans |
+| **Pro** | $9.99/mo | Everything in Free + Token Waste (with Token Budget Intelligence) · Game Plan · AI goal suggestions · Unlimited scans |
 | **Annual** | $89/yr | Same as Pro · Unlimited scans · ~26% savings vs monthly |
 
-> **Try Pro free for 7 days — no credit card.** Run **RepoScope: Start Free 7-Day Pro Trial** from the Command Palette to unlock Token Waste analysis and the AI Game Plan locally.
+> **Try Pro free for 7 days — no credit card.** Run **RepoScope: Start Free 7-Day Pro Trial** from the Command Palette to unlock Token Waste analysis (with Token Budget Intelligence) and the AI Game Plan locally.
 
 Manage billing at [reposcope.app](https://reposcope.app).
 

@@ -1,7 +1,7 @@
 {
   "name": "reposcope-pro",
-  "version": "4.2.0",
-  "description": "RepoScope Pro: BPE-accurate Token Waste analysis and the AI Game Plan with suggested goals. Requires a RepoScope Pro license (Stripe customer id via REPOSCOPE_LICENSE_KEY or a .reposcope-license file).",
+  "version": "4.3.0",
+  "description": "RepoScope Pro: BPE-accurate Token Waste analysis with Token Budget Intelligence (context overhead scanner, rules audit, subscription runway, optimization recommendations) and the AI Game Plan with suggested goals. Requires a RepoScope Pro license (Stripe customer id via REPOSCOPE_LICENSE_KEY or a .reposcope-license file).",
   "author": {
     "name": "NxGen Tech Solutions",
     "email": "support@reposcope.app"
