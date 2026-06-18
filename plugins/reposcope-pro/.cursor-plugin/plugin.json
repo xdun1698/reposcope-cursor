@@ -1,7 +1,7 @@
 {
   "name": "reposcope-pro",
-  "version": "4.5.1",
-  "description": "RepoScope Pro: Cost (estimated token cost per file), Budget (Token Budget Intelligence — per-prompt context overhead, rules audit with one-click fixes, subscription runway, optimization recommendations), Compliance (OWASP Top 10 / SOC 2 / PCI-DSS posture mapped from your scan — code-level controls, not a certification tool), plus the AI Game Plan with suggested goals. Requires a RepoScope Pro license (Stripe customer id via REPOSCOPE_LICENSE_KEY or a .reposcope-license file).",
+  "version": "4.6.0",
+  "description": "RepoScope Pro: Cost (model-agnostic token cost per file), Budget (Token Budget Intelligence — per-prompt context overhead, rules audit with one-click fixes, subscription runway, optimization recommendations), Compliance (OWASP Top 10 / SOC 2 / PCI-DSS posture mapped from your scan — code-level controls, not a certification tool), plus the AI Game Plan with suggested goals. Requires a RepoScope Pro license (Stripe customer id via REPOSCOPE_LICENSE_KEY or a .reposcope-license file).",
   "author": {
     "name": "NxGen Tech Solutions",
     "email": "support@reposcope.app"

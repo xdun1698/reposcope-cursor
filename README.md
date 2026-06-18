@@ -31,7 +31,9 @@ Your whole repository at a glance — every source file ranked by token cost wit
 
 ### Cost — Pro
 
-Estimated token cost per file, ranked — every file ranked by estimated token cost with a cost bar, a breakdown of unused imports / dead code / oversized strings, and cumulative recovered-token tracking via the built-in Tokens Recovered tracker (optional status-bar total, `Copy Recovered-Tokens Summary`). Click any file to open and trim it. In a typical 40K-line TypeScript repo, 4 files often account for 60–70% of the total estimated token budget. All token figures are `~` estimates (~chars/4 heuristic).
+Model-agnostic token cost per file, ranked — works across GPT, Claude, and Gemini without locking you into a single provider's tokenizer. Every file ranked by token cost with a cost bar, a breakdown of unused imports / dead code / oversized strings, and cumulative recovered-token tracking via the built-in Tokens Recovered tracker (optional status-bar total, `Copy Recovered-Tokens Summary`). Click any file to open and trim it. In a typical 40K-line TypeScript repo, 4 files often account for 60–70% of the total estimated token budget. Token counts use the industry-standard chars/4 heuristic — model-agnostic estimates within ~10–15% of any specific model's BPE tokenizer, every figure prefixed with `~`.
+
+![Cost — model-agnostic token cost per file, ranked, with a recovered-tokens tracker](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/cost.png)
 
 ### Budget — Pro (Token Budget Intelligence)
 
@@ -44,11 +46,13 @@ More than file-level token counts — see exactly what your IDE sends to AI on e
 
 All token figures are `~` estimates (~chars/4 heuristic).
 
-![Token Budget Intelligence — context overhead, rules audit, subscription runway, and estimated token cost](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/token-waste.png)
+![Budget (Token Budget Intelligence) — per-prompt context overhead, rules audit, and subscription runway](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/budget.png)
 
 ### Compliance — Pro
 
 Maps your latest Security scan to **OWASP Top 10 (2021)**, **SOC 2 Type II**, and **PCI-DSS v4.0** controls — posture score per framework, per-control PASS / FAIL / PARTIAL / not-covered status, linked findings, a posture trend, and JSON export + copy-summary. Click a control to jump to its findings in Security; Security findings carry an OWASP badge that jumps back. Derived from your existing security results — never a re-scan. **Code-level controls only — a development aid, not a certification tool.** Choose frameworks via `reposcope.compliance.frameworks`.
+
+![Compliance — security findings mapped to OWASP Top 10, SOC 2, and PCI-DSS posture](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/compliance.png)
 
 ### Game Plan — Pro
 
