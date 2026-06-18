@@ -1,7 +1,7 @@
 {
   "name": "reposcope",
-  "version": "4.3.1",
-  "description": "Free repo intelligence for any codebase: pattern-based Security scanning and an interactive Repo Map — the local-first start of AI Cost Intelligence. Runs fully locally (no account, no key); upgrade to Pro for Token Budget Intelligence and the AI Game Plan.",
+  "version": "4.5.1",
+  "description": "Free repo intelligence for any codebase: pattern-based Security scanning and an interactive Repo Map — the local-first start of AI Cost Intelligence. Runs fully locally (no account, no key); upgrade to Pro for Cost, Budget (Token Budget Intelligence), Compliance, and the AI Game Plan.",
   "author": {
     "name": "NxGen Tech Solutions",
     "email": "support@reposcope.app"

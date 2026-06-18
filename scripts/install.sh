@@ -5,17 +5,17 @@
 #   curl -fsSL https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/scripts/install.sh | bash
 #
 # Or, if you already have the repo cloned:
-#   bash ~/Codewalker/scripts/install.sh
+#   bash ~/RepoScope/scripts/install.sh
 #
 # Options (environment variables):
-#   CW_REPO_DIR   Path to an existing clone (skips clone/pull). Default: ~/Codewalker
+#   CW_REPO_DIR   Path to an existing clone (skips clone/pull). Default: ~/RepoScope
 #   CW_SKIP_BUILD Set to 1 to skip npm compile + vsce package (use pre-built .vsix if present)
 #   CW_MODE       "vsix"   — installs the .vsix into Cursor (default)
 #                 "link"   — symlinks repo into ~/.cursor/plugins/local/ instead
 #                 "both"   — does both
 #   CW_GAMEPLAN   Set to 1 to initialize .reposcope-gameplan.json in $PWD
 #
-# The script does NOT require root and does NOT write outside ~/Codewalker and ~/.cursor/.
+# The script does NOT require root and does NOT write outside ~/RepoScope and ~/.cursor/.
 
 set -euo pipefail
 
@@ -27,7 +27,9 @@ warn()    { echo -e "${YELLOW}[reposcope]${NC} $*"; }
 die()     { echo -e "${RED}[reposcope] ERROR:${NC} $*" >&2; exit 1; }
 
 # ─── config ──────────────────────────────────────────────────────────────────
-CW_REPO_DIR="${CW_REPO_DIR:-$HOME/Codewalker}"
+# Note: the CW_* env var names are retained for backward compatibility with
+# existing installs/scripts; only the default path was rebranded to ~/RepoScope.
+CW_REPO_DIR="${CW_REPO_DIR:-$HOME/RepoScope}"
 CW_SKIP_BUILD="${CW_SKIP_BUILD:-0}"
 CW_MODE="${CW_MODE:-vsix}"
 CW_GAMEPLAN="${CW_GAMEPLAN:-0}"
@@ -180,7 +182,7 @@ echo ""
 success "Reposcope install complete!"
 echo ""
 echo "  What Reposcope does on ANY repo:"
-echo "  • Token Waste  — BPE-accurate token cost per file; shows which files drain your AI context budget"
+echo "  • Token Waste  — estimated token cost per file; shows which files drain your AI context budget"
 echo "  • Security     — OWASP Top 10 + secrets scanner with heatmap overlay"
 echo "  • Repo Map     — Files ranked by token cost + git history"
 echo "  • Game Plan    — AI-powered goal tracker, persisted in .reposcope-gameplan.json"

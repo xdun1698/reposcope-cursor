@@ -9,7 +9,7 @@ description: >
 
 # Token Audit
 
-> Tier: Pro. Token Waste is a RepoScope Pro feature. Requires a valid license — set `REPOSCOPE_LICENSE_KEY` (your Stripe customer id, `cus_…`) or add a `.reposcope-license` file to the workspace root. Without entitlement the skill returns a `pro_required` upsell instead of results. Upgrade at https://reposcope.app/pricing.html.
+> Tier: Pro. Cost and Budget are RepoScope Pro features. Requires a valid license — set `REPOSCOPE_LICENSE_KEY` (your Stripe customer id, `cus_…`) or add a `.reposcope-license` file to the workspace root. Without entitlement the skill returns a `pro_required` upsell instead of results. Upgrade at https://reposcope.app/pricing.html.
 
 ## When to use
 
@@ -29,7 +29,7 @@ description: >
 ## Output format
 
 Return a structured report with:
-- `total_tokens`: aggregate BPE token count across all source files
+- `total_tokens`: aggregate estimated token count across all source files
 - `top_files`: array of `{ file, tokens, waste_type }` sorted by token count descending
 - `unused_imports`: count of removable import statements
 - `dead_code`: count of unreachable code blocks
