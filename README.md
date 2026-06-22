@@ -1,6 +1,6 @@
 # RepoScope — Cursor Plugin
 
-**Catch the secrets and risky code in your repo — before your AI builds on them.** Free security scanner + token-ranked repo map inside Cursor; Pro adds Cost, Budget (Token Budget Intelligence), Compliance, and a persistent AI game plan.
+**Catch the secrets and risky code in your repo — before your AI builds on them.** Free security scanner + token-ranked repo map + EU AI Act Article 12 provenance tracking; Pro adds Cost, Budget (Token Budget Intelligence), Compliance, and a persistent AI game plan.
 
 [![Install — VS Code / Cursor](https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white)](vscode:extension/nxgentech.reposcope-ai)
 [![OpenVSX — Registry](https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white)](https://open-vsx.org/extension/nxgentech/reposcope-ai)
@@ -15,7 +15,7 @@
 
 ## What is RepoScope?
 
-RepoScope is a developer productivity plugin for [Cursor](https://cursor.com) that scans your repo for secrets and risky code, maps it by token cost, and — with Pro — shows what each file costs to analyze with AI. The security scanner and repo map are free on every install.
+RepoScope is a developer productivity plugin for [Cursor](https://cursor.com) that scans your repo for secrets and risky code, maps it by token cost, and — with Pro — shows what each file costs to analyze with AI. The security scanner, repo map, and Provenance tab are free on every install.
 
 ### Security Scanning — Free
 
@@ -143,7 +143,7 @@ assets/
 
 | Plan | Price | Included |
 |------|-------|----------|
-| **Free** | $0 | Security · Repo Map · Unlimited scans · No credit card required |
+| **Free** | $0 | Security · Repo Map · Provenance (EU AI Act Art. 12) · Unlimited scans · No credit card required |
 | **Pro** | $9.99/mo | Everything in Free + Cost · Budget (Token Budget Intelligence) · Compliance · Game Plan · AI goal suggestions · Unlimited scans |
 | **Annual** | $89/yr | Same as Pro · Unlimited scans · ~26% savings vs monthly |
 
