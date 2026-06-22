@@ -7,7 +7,7 @@
 [![Cursor — Marketplace](https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white)](https://cursor.com/marketplace)
 ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-![RepoScope AI — Security, Repo Map, Cost, Budget, Compliance, Game Plan](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/hero.png)
+![RepoScope — Security, Repo Map, Cost, Budget, Compliance, Game Plan](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/hero.png)
 
 > **Local-first:** scans run on your machine via bundled ast-grep. Only anonymous funnel events leave your machine, and you can disable them with `reposcope.telemetry`.
 
@@ -80,7 +80,7 @@ Cursor's Extensions panel is backed by Open VSX, where RepoScope is already
 published:
 
 1. Open **Extensions** (`Cmd+Shift+X`).
-2. Search **RepoScope AI** by publisher **nxgentech** and click **Install**.
+2. Search **RepoScope** by publisher **nxgentech** and click **Install**.
 
 Or install the `.vsix` directly:
 
@@ -90,7 +90,7 @@ Or install the `.vsix` directly:
 ### VS Code
 
 **Way 1 — VS Marketplace** — click the **Install** badge above, or search
-**RepoScope AI** (publisher **nxgentech**) in the Extensions panel (`Cmd+Shift+X`).
+**RepoScope** (publisher **nxgentech**) in the Extensions panel (`Cmd+Shift+X`).
 
 **Way 2 — Manual** — from the Command Palette (`Cmd+Shift+P`) or your terminal:
 
@@ -101,7 +101,7 @@ code --install-extension nxgentech.reposcope-ai
 
 ### Windsurf
 
-Windsurf uses Open VSX. Search **RepoScope AI** in the Extensions panel, or
+Windsurf uses Open VSX. Search **RepoScope** in the Extensions panel, or
 install the `.vsix` from [Open VSX](https://open-vsx.org/extension/nxgentech/reposcope-ai)
 via **Install from VSIX…**.
 
