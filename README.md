@@ -148,8 +148,8 @@ assets/
 | Plan | Price | Included |
 |------|-------|----------|
 | **Free** | $0 | Security · Repo Map · Provenance (EU AI Act Art. 12) · Unlimited scans · No credit card required |
-| **Pro** | $9.99/mo | Everything in Free + Cost · Budget (Token Budget Intelligence) · Compliance (5 frameworks + audit templates) · Game Plan · AI goal suggestions · Unlimited scans |
-| **Annual** | $89/yr | Same as Pro · Unlimited scans · ~26% savings vs monthly |
+| **Pro** | $14.99/mo | Everything in Free + Cost · Budget (Token Budget Intelligence) · Compliance (5 frameworks + audit templates) · Game Plan · AI goal suggestions · Unlimited scans |
+| **Annual** | $129/yr | Same as Pro · Unlimited scans · ~28% savings vs monthly |
 
 <!-- TEAM_LAUNCH_READY: publish the Team + Enterprise rows when the web dashboard ships.
      Team billing is wired ($359/mo flat for 5 seats, beta; AI support agents metered
