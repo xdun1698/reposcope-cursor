@@ -1,6 +1,8 @@
 # RepoScope — Cursor Plugin
 
-**Catch the secrets and risky code in your repo — before your AI builds on them.** Free security scanner + token-ranked repo map + EU AI Act Article 12 provenance tracking; Pro adds Cost, Budget (Token Budget Intelligence), Compliance, and a persistent AI game plan.
+**Compliance intelligence for your codebase. find. fix. report.**
+
+Scan your code for security risks, map findings to 5 compliance frameworks (OWASP, SOC 2, PCI-DSS, ISO 42001, EU AI Act), and generate audit-ready evidence — all from your IDE, with one command. Local-first: your code never leaves your machine.
 
 [![Install — VS Code / Cursor](https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white)](vscode:extension/nxgentech.reposcope-ai)
 [![OpenVSX — Registry](https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white)](https://open-vsx.org/extension/nxgentech/reposcope-ai)
@@ -15,7 +17,9 @@
 
 ## What is RepoScope?
 
-RepoScope is a developer productivity plugin for [Cursor](https://cursor.com) that scans your repo for secrets and risky code, maps it by token cost, and — with Pro — shows what each file costs to analyze with AI. The security scanner, repo map, and Provenance tab are free on every install.
+RepoScope is the compliance intelligence engine for developers who ship with AI. It scans your codebase for security risks, maps every finding to regulatory framework controls, and generates the audit artifacts your auditor actually asks for — all from your IDE, without your code ever leaving your machine.
+
+**Free:** security scanner (44 detectors, 14 languages), token-ranked repo map, EU AI Act Article 12 provenance tracking. **Pro:** 5-framework compliance posture, 4 audit-ready templates, 1-click evidence package, token cost and budget intelligence, AI Game Plan.
 
 ### Security Scanning — Free
 
@@ -63,6 +67,10 @@ Generate **audit-ready templates** per framework with one click — **Control Ma
 AI-powered goal suggestions based on your repo analysis. Track progress, mark goals complete, and use "Fix with Cursor" to resolve issues directly in the editor.
 
 ![AI Game Plan — persistent context across AI sessions](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/game-plan.png)
+
+### Audit Prep — Pro
+
+One-click evidence package. Run **RepoScope: Prepare for Audit** from the Command Palette to generate all 4 audit-ready templates — Control Matrix, Attestation Memo, Gap Plan, Auditor Evidence Response — across all active frameworks at once. Output goes to `.reposcope/audit/`. No re-scan required.
 
 ---
 
