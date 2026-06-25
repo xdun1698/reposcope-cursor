@@ -50,9 +50,13 @@ All token figures are `~` estimates (~chars/4 heuristic).
 
 ### Compliance — Pro
 
-Maps your latest Security scan to **OWASP Top 10 (2021)**, **SOC 2 Type II**, and **PCI-DSS v4.0** controls — posture score per framework, per-control PASS / FAIL / PARTIAL / not-covered status, linked findings, a posture trend, and JSON export + copy-summary. Click a control to jump to its findings in Security; Security findings carry an OWASP badge that jumps back. Derived from your existing security results — never a re-scan. **Code-level controls only — a development aid, not a certification tool.** Choose frameworks via `reposcope.compliance.frameworks`.
+Maps your latest Security scan to **OWASP Top 10 (2021)**, **SOC 2 Type II**, **PCI-DSS v4.0**, **ISO/IEC 42001:2023**, and **EU AI Act Article 12** controls — posture score per framework, per-control PASS / FAIL / PARTIAL / not-covered status, linked findings, a posture trend, and JSON export + copy-summary. Click a control to jump to its findings in Security; Security findings carry an OWASP badge that jumps back. Derived from your existing security results — never a re-scan. **Code-level controls only — a development aid, not a certification tool.** Choose frameworks via `reposcope.compliance.frameworks`.
 
-![Compliance — security findings mapped to OWASP Top 10, SOC 2, and PCI-DSS posture](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/compliance.png)
+Generate **audit-ready templates** per framework with one click — **Control Matrix**, **Attestation Memo**, **Gap Plan**, and **Auditor Evidence Response**. Run **RepoScope: Prepare for Audit** from the Command Palette to generate the full evidence package across all active frameworks.
+
+> **ISO/IEC 42001 note:** ISO 42001 requires organizational policies, risk assessments, and process evidence beyond code scanning. This is a development aid for identifying code-level control gaps, not a certification tool.
+
+![Compliance — security findings mapped to OWASP Top 10, SOC 2, PCI-DSS, ISO 42001, and EU AI Act posture](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/compliance.png)
 
 ### Game Plan — Pro
 
@@ -144,7 +148,7 @@ assets/
 | Plan | Price | Included |
 |------|-------|----------|
 | **Free** | $0 | Security · Repo Map · Provenance (EU AI Act Art. 12) · Unlimited scans · No credit card required |
-| **Pro** | $9.99/mo | Everything in Free + Cost · Budget (Token Budget Intelligence) · Compliance · Game Plan · AI goal suggestions · Unlimited scans |
+| **Pro** | $9.99/mo | Everything in Free + Cost · Budget (Token Budget Intelligence) · Compliance (5 frameworks + audit templates) · Game Plan · AI goal suggestions · Unlimited scans |
 | **Annual** | $89/yr | Same as Pro · Unlimited scans · ~26% savings vs monthly |
 
 <!-- TEAM_LAUNCH_READY: publish the Team + Enterprise rows when the web dashboard ships.
@@ -160,7 +164,7 @@ Team plans include a 14-day trial.
 -->
 
 
-> **Try Pro free for 7 days — no credit card.** Run **RepoScope: Start Free 7-Day Pro Trial** from the Command Palette to unlock Cost (estimated token cost per file), Budget (context overhead, rules audit, subscription runway, recommendations), Compliance (OWASP/SOC 2/PCI-DSS posture), and the AI Game Plan locally.
+> **Try Pro free for 7 days — no credit card.** Run **RepoScope: Start Free 7-Day Pro Trial** from the Command Palette to unlock Cost (estimated token cost per file), Budget (context overhead, rules audit, subscription runway, recommendations), Compliance (OWASP/SOC 2/PCI-DSS/ISO 42001/EU AI Act posture + audit-ready templates), and the AI Game Plan locally.
 
 Manage billing at [reposcope.app](https://reposcope.app).
 
