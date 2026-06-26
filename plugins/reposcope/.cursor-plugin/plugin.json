@@ -1,6 +1,6 @@
 {
   "name": "reposcope",
-  "version": "5.6.0",
+  "version": "5.6.1",
   "description": "Free repo intelligence for any codebase: pattern-based Security scanning and an interactive Repo Map — the local-first start of AI Cost Intelligence. Runs fully locally (no account, no key); upgrade to Pro for Cost, Budget (Token Budget Intelligence), Compliance, and the AI Game Plan.",
   "author": {
     "name": "NxGen Tech Solutions",
