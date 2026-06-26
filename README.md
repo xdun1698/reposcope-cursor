@@ -111,9 +111,9 @@ ext install nxgentech.reposcope-ai
 code --install-extension nxgentech.reposcope-ai
 ```
 
-### Windsurf
+### Devin Desktop (formerly Windsurf)
 
-Windsurf uses Open VSX. Search **RepoScope** in the Extensions panel, or
+Devin Desktop uses Open VSX. Search **RepoScope** in the Extensions panel, or
 install the `.vsix` from [Open VSX](https://open-vsx.org/extension/nxgentech/reposcope-ai)
 via **Install from VSIX…**.
 
