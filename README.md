@@ -4,6 +4,8 @@
 
 Scan your code for security risks, map findings to 5 compliance frameworks (OWASP, SOC 2, PCI-DSS, ISO 42001, EU AI Act), and generate audit-ready evidence — all from your IDE, with one command. Local-first: your code never leaves your machine.
 
+**👉 [See a real sample report](https://reposcope.app/sample-report)** — the exact branded, audit-ready package RepoScope generates (from a demo repo). **[Or drive the interactive demo →](https://reposcope.app/demo)**
+
 [![Install — VS Code / Cursor](https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white)](vscode:extension/nxgentech.reposcope-ai)
 [![OpenVSX — Registry](https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white)](https://open-vsx.org/extension/nxgentech/reposcope-ai)
 [![Cursor — Marketplace](https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white)](https://cursor.com/marketplace)
@@ -70,7 +72,9 @@ AI-powered goal suggestions based on your repo analysis. Track progress, mark go
 
 ### Audit Prep — Pro
 
-One-click evidence package. Run **RepoScope: Prepare for Audit** from the Command Palette to generate all 4 audit-ready templates — Control Matrix, Attestation Memo, Gap Plan, Auditor Evidence Response — across all active frameworks at once. Output goes to `.reposcope/audit/`. No re-scan required.
+One-click evidence package. Run **RepoScope: Prepare for Audit** from the Command Palette to generate all 4 audit-ready templates — Control Matrix, Attestation Memo, Gap Plan, Auditor Evidence Response — across all active frameworks at once. Output goes to `.reposcope/audit/` with a branded `index.html` landing page linking every document. No re-scan required.
+
+**[Browse a real sample package →](https://reposcope.app/sample-report)** (generated from a demo repo — the exact output you get).
 
 ---
 
