@@ -1,6 +1,6 @@
 # RepoScope — Cursor Plugin
 
-**Compliance intelligence for your codebase. find. fix. report.**
+**Compliance intelligence for your codebase. find • fix • report**
 
 Scan your code for security risks, map findings to 5 compliance frameworks (OWASP, SOC 2, PCI-DSS, ISO 42001, EU AI Act), and generate audit-ready evidence — all from your IDE, with one command. Local-first: your code never leaves your machine.
 
