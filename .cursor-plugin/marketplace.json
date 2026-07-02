@@ -13,7 +13,7 @@
       "name": "reposcope",
       "source": "reposcope",
       "description": "Free repo intelligence for any codebase: pattern-based Security scanning and a token-ranked Repo Map — the local-first start of AI Cost Intelligence. Runs fully locally — no account, no key.",
-      "version": "5.9.0",
+      "version": "6.1.17",
       "author": {
         "name": "NxGen Tech Solutions",
         "email": "support@reposcope.app"
@@ -34,7 +34,7 @@
       "name": "reposcope-pro",
       "source": "reposcope-pro",
       "description": "RepoScope Pro: Cost (model-agnostic token cost per file), Budget (Token Budget Intelligence — context overhead, rules audit, subscription runway, optimization recommendations), Compliance (OWASP/SOC 2/PCI-DSS/ISO 42001/EU AI Act posture from your scan, with audit-ready templates — code-level controls, not certification), plus the AI Game Plan with suggested goals. Requires a RepoScope Pro license.",
-      "version": "5.9.0",
+      "version": "6.1.17",
       "author": {
         "name": "NxGen Tech Solutions",
         "email": "support@reposcope.app"

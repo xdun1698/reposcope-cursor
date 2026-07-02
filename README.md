@@ -9,7 +9,10 @@ Scan your code for security risks, map findings to 5 compliance frameworks (OWAS
 [![Install — VS Code / Cursor](https://img.shields.io/badge/Install-VS%20Code%20%2F%20Cursor-007ACC?logo=visualstudiocode&logoColor=white)](vscode:extension/nxgentech.reposcope-ai)
 [![OpenVSX — Registry](https://img.shields.io/badge/OpenVSX-Registry-C160EF?logo=eclipse&logoColor=white)](https://open-vsx.org/extension/nxgentech/reposcope-ai)
 [![Cursor — Marketplace](https://img.shields.io/badge/Cursor-Marketplace-000000?logo=cursor&logoColor=white)](https://cursor.com/marketplace)
+[![VS Marketplace rating](https://img.shields.io/visual-studio-marketplace/r/nxgentech.reposcope-ai?label=rating)](https://marketplace.visualstudio.com/items?itemName=nxgentech.reposcope-ai&ssr=false#review-details)
 ![License MIT](https://img.shields.io/badge/license-MIT-green)
+
+> **★ Using RepoScope?** A quick review helps other developers find it — [rate it on VS Marketplace](https://marketplace.visualstudio.com/items?itemName=nxgentech.reposcope-ai&ssr=false#review-details) or [on Open VSX](https://open-vsx.org/extension/nxgentech/reposcope-ai/reviews).
 
 ![RepoScope — Security, Repo Map, Cost, Budget, Compliance, Game Plan](https://raw.githubusercontent.com/xdun1698/reposcope-cursor/main/screenshots/hero.png)
 
